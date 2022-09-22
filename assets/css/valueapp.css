@@ -28,6 +28,11 @@ a {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 2.5rem;
+}
+
+
 /* Hero Section */
 .page-wrapper {
   background: linear-gradient(90deg, #d9d9d9 50%, #a0a0a0 50%);
@@ -161,6 +166,8 @@ a {
   display: flex;
   align-items: center;
   font-weight: 600;
+  font-size: 2rem;
+
 }
 .views .views-tab p:first-child > img {
   margin-right: 1rem;
@@ -168,6 +175,13 @@ a {
 .views .views-tab p:last-child > img {
   margin-left: 1rem;
 }
+
+.views > p {
+  font-size: 1.5rem;
+  max-width: 55ch;
+  margin-top: 1rem;
+}
+
 .views h3 {
   font-size: 3rem;
   margin-top: 1rem;
@@ -244,6 +258,12 @@ a {
   transform: translateY(250px);
 }
 
+.views-dark {
+  background-color: #a0a0a0;
+  padding: 4rem;
+}
+
+
 /* Services Section */
 .views .services-section {
   display: flex;
@@ -313,3 +333,6 @@ a {
   color: #fff;
   margin-left: 5.5rem;
 }
+=======
+}
+>>>>>>> ec639ab (added the about page)
