@@ -9,7 +9,6 @@ header {
   font-size: 1.4rem;
   width: 100%;
   height: 70px;
-  /* border: 1px solid red; */
   padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
@@ -21,10 +20,13 @@ header .branding {
 }
 header .branding h3 {
   color: #2d0c5c;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 header .branding h3 span {
   color: #772877; /* different shade of violet*/
+}
+header > a {
+  display: none;
 }
 header .nav-list {
   display: flex;

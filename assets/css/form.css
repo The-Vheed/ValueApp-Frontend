@@ -81,9 +81,7 @@ form input:focus, form textarea:focus, form select:focus {
 }
 .form {
   width: 60%;
-  margin: 6rem auto;
-  margin-top: 1rem;
-  border: 1px solid #cccc;
+  margin: 1rem auto 6rem;
   border-radius: .35rem;
   padding: 3rem 4rem 6rem;
   font-family: 'Work Sans', serif;
@@ -140,6 +138,10 @@ form input:focus, form textarea:focus, form select:focus {
   background-color: #2d0c5cde;
   color: #e4e4e4;
   text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .form-step div.label-flex {
   display: flex;
@@ -169,4 +171,27 @@ form input:focus, form textarea:focus, form select:focus {
   color: #fff;
   font-weight: 500;
   padding: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+  header .nav-list, header .authentication {
+    display: none;
+  }
+  .form {
+    width: 97%;
+    padding: 3rem 2rem 6rem;
+  }
+  .progressBar {
+    width: 80%;
+  }
 }

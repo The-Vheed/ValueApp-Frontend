@@ -46,8 +46,6 @@ h3 {
   flex-direction: column;
   gap: 4rem;
   justify-content: space-between;
-  flex: 0 0 50%;
-  max-width: 50%;
 }
 .page-wrapper .hero-text .banner {
   margin: 0 4rem;
@@ -149,6 +147,8 @@ h3 {
   background: var(--nav-link);
   color: #fff;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 /* Viewed Properties */
@@ -166,11 +166,14 @@ h3 {
   font-weight: 600;
   font-size: 2rem;
 }
+.views .views-tab p i {
+  font-size: 4rem;
+}
+.views .views-tab p i:last-child {
+  font-weight: 600;
+}
 .views .views-tab p:first-child > img {
   margin-right: 1rem;
-}
-.views .views-tab p:last-child > img {
-  margin-left: 1rem;
 }
 .views > p {
   font-size: 1.5rem;
@@ -252,8 +255,17 @@ h3 {
   transform: translateY(250px);
 }
 .views-dark {
-  background-color: #a0a0a0;
-  padding: 4rem;
+  background-color: #343232;
+  padding: 6rem 4rem;
+  color: #fff;
+}
+.views-dark hr {
+  margin-top: 4rem;
+  width: 50%;
+  margin-bottom: 2rem;
+  border: none;
+  height: 0.5px;
+  background-color: white;
 }
 
 /* Services Section */
@@ -312,6 +324,9 @@ h3 {
   font-weight: 600;
   margin-left: 5.5rem;
 }
+.services-section .services ul li {
+  list-style: disc;
+}
 .services-section .services button {
   font-family: inherit;
   font-size: 1.5rem;
@@ -323,4 +338,35 @@ h3 {
   border-radius: 5px;
   color: #fff;
   margin-left: 5.5rem;
+}
+
+/* Testimonials */
+.views .cards-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cards-flex .testimonial-author {
+  flex: 0 0 35%;
+}
+.cards-flex .testimonial-info {
+  display: flex;
+  flex: 0 0 55%;
+}
+.cards-flex .testimonial-author h3 {
+  font-weight: 500;
+}
+.cards-flex .testimonial-author p {
+  font-size: 1.5rem;
+  color: #e4e2e2;
+}
+.testimonial-info p {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 60ch;
+}
+.testimonial-info p > i {
+  font-size: 3rem;
 }
