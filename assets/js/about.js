@@ -6,7 +6,7 @@ function slide() {
     }, 6000);
     setTimeout(() => {
         nagii.src = 'assets/images/cc.jpg'
-    }, 9000);
+    }, 12000);
 }slide()
 setInterval(() => {
     nagii.src = 'assets/images/aa.jpg'
@@ -15,8 +15,8 @@ setInterval(() => {
     }, 6000);
     setTimeout(() => {
         nagii.src = 'assets/images/cc.jpg'
-    }, 9000);
-}, 12000);
+    }, 12000);
+}, 18000);
 
 
 
