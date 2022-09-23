@@ -246,9 +246,9 @@ main{
 .lead_cont{
     padding: 80px 4% 0px 4%;
 }
-.lead_text_cont{
+/* .lead_text_cont{
 
-}
+} */
 .lead_text{
     width: 40%;
 }
@@ -526,9 +526,9 @@ main{
     }
 }
 @media (max-width: 870px) {
-    .front_img_cont{
-        /* width: 90%; */
-    }
+    /* .front_img_cont{
+        width: 90%;
+    } */
     .front_img{
         width: 800px;
     }
@@ -775,10 +775,10 @@ main{
 
 
 
-header , footer{
+/* header , footer{
     display: none;
 }
-
+ */
 
 
 
