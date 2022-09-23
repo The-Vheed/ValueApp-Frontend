@@ -1,0 +1,108 @@
+/* Media Queries */
+@media screen and (max-width: 425px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+  header .nav-list, header .authentication {
+    display: none;
+  }
+  .page-wrapper {
+    display: block;
+    margin: 2rem;
+    padding: 5rem 2rem 4rem;
+    height: 40vh;
+  }
+  .page-wrapper .hero-text {
+    gap: 2.5rem;
+  }
+  .page-wrapper .hero-text .banner {
+    margin: 0 2rem;
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+  .banner h3 {
+    font-size: 1.5rem;
+  }
+  .page-wrapper .hero-text .banner .welcome-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 35ch;
+    line-height: 1.2;
+  }
+  .hero-text .banner-btn {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+  .hero-text .banner-achievements {
+    margin-left: 2rem;
+  }
+  .search-form {
+    padding: 2rem 0;
+  }
+  .search-form .search-form-box {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-form .search-form-box select {
+    width: 100%;
+  }
+
+  .views {
+    padding: 0 2rem 6rem;
+  }
+  .views-dark {
+    padding: 4rem 2rem;
+  }
+  .views .views-tab p {
+    justify-content: flex-end;
+  }
+  .views .views-tab img {
+    width: 30%;
+  }
+  .views .services-section {
+    display: block;
+  }
+  .services-section .services h3, .services-section .services p.services-info,
+  .services-section .services ul, .services-section .services button {
+    margin-left: 2rem;
+  }
+  .views .cards {
+    grid-template-columns: 100%;
+    margin-top: 3rem;
+  }
+  .views .cards-flex {
+    display: grid;
+  }
+
+  footer {
+    display: block;
+    padding: 4rem 2rem 2rem;
+  }
+  footer .footer-info {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+  footer .footer-desc h3 {
+    margin-bottom: 1rem;
+    color: #2d0c5c;
+  }
+  footer .footer-desc h3 span {
+    color: #772877;
+  }
+  footer .footer-sitemap {
+    display: block;
+  }
+  .footer-sitemap .sitemap {
+    margin-bottom:  2rem;
+  }
+}
