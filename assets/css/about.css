@@ -12,7 +12,6 @@ main{
     flex-flow: column;
 }
 .front_img_cont{
-  /* height: 500px; */
   width: 100%;
   display: flex;
   justify-content: center;
