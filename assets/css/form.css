@@ -189,7 +189,7 @@ form input:focus, form textarea:focus, form select:focus {
 }
 
 @media screen and (max-width: 480px) {
-  header {
+  /* header {
     padding: 1rem 2rem;
   }
   header > a {
@@ -199,7 +199,7 @@ form input:focus, form textarea:focus, form select:focus {
     align-items: center;
   }
   header .nav-list, header .authentication {
-    display: none;
+    display: none; */
   }
   .form {
     width: 97%;
