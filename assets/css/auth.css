@@ -50,7 +50,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 5rem;
+  padding: 0 0rem;
   /* overflow: hidden; */
   /* Stack the .signin-signup section */
   grid-column: 1 / 2;
@@ -66,7 +66,7 @@ form.sign-up-form {
   opacity: 0;
 }
 .title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #2d0c5c;
   margin-bottom: 10px;
 }
@@ -86,7 +86,7 @@ form.sign-up-form {
   text-align: center;
   line-height: 45px;
   color: #acacac;
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 .input-field .check {
   position: absolute;
@@ -99,7 +99,7 @@ form.sign-up-form {
   border: none;
   line-height: 1;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: .9rem;
   color: #333;
 }
 .input-field input::placeholder {
@@ -107,7 +107,7 @@ form.sign-up-form {
   font-weight: 500;
 }
 .btn {
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: 'Montserrat', serif;
   width: 150px;
   height: 45px;
@@ -129,7 +129,7 @@ form.sign-up-form {
 }
 .social-text {
   padding: .7rem 0;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 .social-media {
   display: flex;
@@ -145,7 +145,7 @@ form.sign-up-form {
   align-items: center;
   text-decoration: none;
   color: #2d0c5c;
-  font-size: 1.1rem;
+  font-size: .9rem;
   border-radius: 50%;
   transition: all .3s ease-in-out;
 }
@@ -186,10 +186,10 @@ form.sign-up-form {
 .panel h3 {
   font-weight: 600;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .panel p {
-  font-size: .95rem;
+  font-size: .75rem;
   padding: .7rem 0;
 }
 .btn.transparent {
@@ -199,7 +199,7 @@ form.sign-up-form {
   width: 130px;
   height: 41px;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: .6rem;
 }
 .image {
   width: 100%;
@@ -243,13 +243,13 @@ form.sign-up-form {
 /* Media Queries */
 @media (max-width: 48rem) {
   .container {
-    min-height: 800px;
-    height: 100vh;
+    min-height: 700px;
+    height: 70vh;
   }
   .container::before {
     width: 1500px;
     height: 1500px;
-    left: 30%;
+    left: 10%;
     bottom: 65%;
     transform: translateX(-50%);
     right: initial;
@@ -320,16 +320,16 @@ form.sign-up-form {
 
 @media screen and (max-width: 30rem) {
   form {
-    padding: 0 1.5rem;
+    padding: 0 0rem;
   }
   .image {
     display: none;
   }
   .panel .content {
-    padding: .5rem 1rem;
+    padding: .2rem .2rem;
   }
   .container::before {
-    bottom: 72%;
+    bottom: 70%;
     left: 50%;
   }
   .container.sign-up-mode::before {
