@@ -2,6 +2,16 @@ const nav = document.querySelector(".nav-list");
 const navToggle = document.querySelector(".toggler");
 const close = document.querySelector(".bx-menu-alt-right");
 
+const sr = ScrollReveal ({
+  distance: '25px',
+  duration: 2500,
+  reset: true
+});
+
+sr.reveal ('.page-wrapper, .views, .animate, footer',{
+	delay:100, origin:'bottom'
+});
+
 // When someone clicks on the hamburger menu
 navToggle.addEventListener("click", () => {
   const visibility = nav.getAttribute("data-visible");
@@ -17,7 +27,6 @@ navToggle.addEventListener("click", () => {
 });
 
 navToggle.addEventListener("click", () => {
-  console.log("Clicked");
   close.classList.toggle("bx-menu-alt-right");
   close.classList.toggle("bx-x");
 });

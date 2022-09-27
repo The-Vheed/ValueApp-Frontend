@@ -45,7 +45,7 @@
     align-items: center;
   }
   .page-wrapper {
-    display: block;
+    display: flex;
     padding: 5rem 2rem 4rem;
     height: 40vh;
   }
@@ -86,7 +86,7 @@
     display: none;
   }
   .views .cards .card .card-info p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   .views .cards .card .neighbourhood {
     font-size: 2.2rem;
@@ -137,8 +137,8 @@
     align-items: center;
   }
   .page-wrapper {
-    display: block;
-    margin: 2rem;
+    display: flex;
+    margin: 10rem 2rem 2rem;
     padding: 5rem 2rem 4rem;
     height: 45vh;
   }
@@ -149,6 +149,7 @@
     margin: 0 2rem;
     font-size: 2.2rem;
     line-height: 1;
+    z-index: 1;
   }
   .banner h3 {
     font-size: 1.5rem;
@@ -187,8 +188,12 @@
   .views-dark {
     padding: 4rem 2rem;
   }
+  .views h3 {
+    font-size: 2rem;
+  }
   .views .views-tab p {
     justify-content: flex-end;
+    font-size: 1.3rem;
   }
   .views .views-tab img {
     width: 30%;

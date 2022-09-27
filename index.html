@@ -8,14 +8,22 @@
   <!-- Box Icons CDN -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <!-- Custom Styling -->
-  <link rel="stylesheet" href="assets/boxicons/css/boxicons.css">
+  <!-- <link rel="stylesheet" href="assets/boxicons/css/boxicons.css"> -->
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/main_responsive.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
 
   <title>Valueapp || Home</title>
 </head>
 <body>
+
+  <!-- Preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
   
   <div class="container">
     <!-- Navbar -->
@@ -24,9 +32,9 @@
         <h3>Value<span>App</span>.</h3>
       </div>
       <ul id="nav-list" data-visible="false" class="nav-list">
-        <li class="nav-item"><a href="./index.html">Home</a></li>
-        <li class="nav-item"><a href="./valuation.html">Asset Valuation</a></li>
-        <li class="nav-item"><a href="./p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><a href="p_listing.html">Property Listing</a></li>
         <li class="nav-item"><a href="#">Services</a></li>
         <li class="nav-item"><a href="./about.html">About Us</a></li>
         <li class="nav-item"><a href="#">Contact</a></li>
@@ -39,11 +47,11 @@
 
     <!-- Hero -->
     <div class="page-wrapper">
+      <div class="overlay"></div>
       <div class="hero-text">
-        <div class="banner">
-          <h3 class="uppercase">Valueapp</h3>
-          <p class="uppercase">A place to be</p>
-          <p class="uppercase">In search of Property</p>
+        <div class="banner home-text">
+          <h3 class="uppercase">Welcome to Valueapp</h3>
+          <h3 class="uppercase">A place for property experts</h3>
           <p class="welcome-text">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
           </p>
@@ -63,36 +71,10 @@
       </div>
     </div>
 
-    <!-- Search Form -->
-    <div class="search-form">
-      <div class="search-form-tabs">
-        <a href="#" class="active">Rent</a>
-        <a href="#">Buy</a>
-      </div>
-      <form action="" method="" class="search-form-box">
-        <div class="input-group">
-          <label for="#">Location</label>
-          <select name="" id="">
-            <option value="">Select your city</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="#">Property Type</label>
-          <select name="" id="">
-            <option value="">Choose a range</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="#">Rent Range</label>
-          <input type="text" placeholder="Enter Budget">
-        </div>
-        <button class="search">Search Now <i class="bx bx-right-arrow-alt bx-fade-right"></i></button>
-      </form>
-    </div>
-
     <!-- Services -->
     <div class="views">
       <div class="services-section">
+        <div class="overlay"></div>
         <div class="cards">
           <div class="card bg-image bg-image-one">
             <div class="overlay"></div>
@@ -326,6 +308,9 @@
     </div>
   </div>
 
+  <script src="assets/js/scrollReveal.js"></script>
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/loader.js"></script>
 </body>
 </html>

@@ -8,14 +8,22 @@
   <!-- Box Icons CDN -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <!-- Custom Styling -->
-  <link rel="stylesheet" href="assets/boxicons/css/boxicons.css">
+  <!-- <link rel="stylesheet" href="assets/boxicons/css/boxicons.css"> -->
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main_responsive.css">
   <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
 
   <title>Valueapp || About Us</title>
 </head>
 <body>
+
+  <!-- Preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
   
   <div class="container">
     <!-- Navbar -->
@@ -24,9 +32,9 @@
         <h3>Value<span>App</span>.</h3>
       </div>
       <ul id="nav-list" data-visible="false" class="nav-list">
-        <li class="nav-item"><a href="./index.html">Home</a></li>
-        <li class="nav-item"><a href="./valuation.html">Asset Valuation</a></li>
-        <li class="nav-item"><a href="./p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><a href="p_listing.html">Property Listing</a></li>
         <li class="nav-item"><a href="#">Services</a></li>
         <li class="nav-item"><a href="./about.html">About Us</a></li>
         <li class="nav-item"><a href="#">Contact</a></li>
@@ -39,7 +47,7 @@
     
     <!-- Main Section -->
     <main>
-      <div class="front_img_cont">
+      <div class="front_img_cont animate">
         <div class="front_image">
           <img src="assets/images/aa.jpg" alt="" class="front_img">
         </div>
@@ -60,7 +68,7 @@
       <div class="line_cont">
         <hr>
       </div>
-      <div class="va_goal_cont">
+      <div class="va_goal_cont animate">
         <div class="goal_about_us_cont">
           <div class="ab_line"></div>
           <div class="txc about_us_tx">
@@ -94,7 +102,7 @@
           </div>
         </div>
       </div>
-      <div class="rating_cont">
+      <div class="rating_cont animate">
         <div class="rating_box_cont">
           <div class="rating_box rating_box1">
             <div class="box_rate">
@@ -116,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="lead_cont">
+      <div class="lead_cont animate">
         <div class="goal_about_us_cont">
           <div class="ab_line"></div>
           <div class="txc about_us_tx">
@@ -166,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="partners_cont">
+      <div class="partners_cont animate">
         <div class="txc partner_tx">
           Partners
         </div>
@@ -177,7 +185,7 @@
           <img src="assets/images/par_logo4.JPG" alt="" class="pertner_img">
         </div>
       </div>
-      <div class="explore_cont">
+      <div class="explore_cont animate">
         <div class="goal_about_us_cont">
           <div class="ab_line"></div>
           <div class="txc about_us_tx">
@@ -270,7 +278,10 @@
     </div>
   </div>
 
+  <script src="assets/js/scrollReveal.js"></script>
+  <script src="assets/js/nav.js"></script>
   <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/loader.js"></script>
   <script src="assets/js/default.js"></script>
   <script src="assets/js/about.js"></script>
   <script src="assets/js/nav.js"></script>
