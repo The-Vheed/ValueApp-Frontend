@@ -17,7 +17,7 @@
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: #6720cc;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
 }
@@ -28,7 +28,7 @@
   inset: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: #7a1bff;
   -webkit-animation: spin 3s linear infinite;
           animation: spin 3s linear infinite;
 }
@@ -39,7 +39,7 @@
   inset: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f9c922;
+  border-top-color: #481392;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;
 }
@@ -75,7 +75,7 @@
   top: 0;
   width: 51%;
   height: 100%;
-  background: #222;
+  background: #2d0c5c;
 }
 
 #loader-wrapper .loader-section.section-left {
