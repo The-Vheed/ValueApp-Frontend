@@ -25,6 +25,8 @@
 html, body {
   font-size: 62.5%;
   font-family: "Work Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 ul, li, ol {
   list-style: none;
@@ -34,7 +36,7 @@ a {
 }
 .container {
   max-width: 1300px;
-  margin: 10rem auto 2rem;
+  margin: 10rem auto 0;
 }
 .uppercase {
   text-transform: uppercase;
@@ -88,11 +90,9 @@ header .nav-list .nav-item a {
 
 header .login_signup a {
   padding: 1rem 1.2rem;
-  /* background: #a9a9a9; */
   border-radius: var(--button-border-radius);
   color: var(--main-color);
   font-weight: 600;
-  /* font-size: 1.5rem; */
   background-color: #fff;
   border: none;
   box-shadow: 0px 0px 5px var(--button-shadow-color);
@@ -198,7 +198,6 @@ footer .footer-sitemap ul a {
 padding: 18px 4% 0px 4%;
 }
 
-
 .bg_mode_cont{
   background: indigo;
   position: fixed;
@@ -210,7 +209,6 @@ padding: 18px 4% 0px 4%;
 .bg_mode{
   font-size: 34px;
 }
-
 .view_img_cont{
   position: fixed;
   left: 50%;
@@ -245,7 +243,7 @@ padding: 18px 4% 0px 4%;
 }
 
 button{
-  /* font-family: "Work Sans", sans-serif; */
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   background-color: var(--button-color);
@@ -263,22 +261,6 @@ button:focus{
   background-color: var(--button-focus-color);
   box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
 }
-/* .btn_effect{
-  overflow: hidden;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-} */
-/* .btn_ripple{
-  position: absolute;
-  background: rgba(225, 225, 225, 0.5);
-  width: 0px;
-  height: 0px;
-  pointer-events: none;
-  transition: 2s;
-  border-radius: 50%;
-} */
 .ripple_ani{
   width: 500px;
   height: 500px;

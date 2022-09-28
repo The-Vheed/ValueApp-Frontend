@@ -1,8 +1,13 @@
+img {
+  display: block;
+}
 
 /* Hero Section */
 .page-wrapper {
   position: relative;
   background: url(../images/building.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
   margin: 10rem 4rem 0;
   padding: 4rem;
@@ -192,12 +197,10 @@
   margin-top: 1rem;
 }
 .views .cards .card .purchase-group button {
-  /* font-family: inherit;
+  font-family: inherit;
   padding: .8rem 2rem;
   border: none;
-  border-radius: 20px;
-  background-color: #1e0fa3;
-  color: #fff; */
+  color: #fff;
 }
 .views .cards .card .purchase-group p {
   font-weight: 600;
@@ -314,12 +317,12 @@
 .services-section .services button {
   /* font-family: inherit; */
   /* font-size: 1.5rem; */
-  width: max-content;
+  /* width: max-content; */
   /* padding: .8rem 3rem; */
   /* border: none; */
   /* background-color: #2d0c5c; */
   /* font-weight: 500; */
-  /* border-radius: 20px; */
+  border-radius: 20px;
   /* color: #fff; */
   margin-left: 5.5rem;
 }
