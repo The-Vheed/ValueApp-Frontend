@@ -214,12 +214,33 @@ padding: 18px 4% 0px 4%;
 
 .h_img_cont{
   overflow: hidden;
+  width: 100%;
 }
 .h_img{
   transition: .4s;
 }
 .h_img:hover{
   transform: scale(1.1);
+}
+.btn_effect{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.btn_ripple{
+  position: absolute;
+  background: rgba(225, 225, 225, 0.5);
+  width: 0px;
+  height: 0px;
+  pointer-events: none;
+  transition: 2s;
+  border-radius: 50%;
+}
+.ripple_ani{
+  width: 500px;
+  height: 500px;
 }
 
 /* Media Queries */
