@@ -114,7 +114,7 @@ header .login_signup a:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main-color);
+  background: #3f0196;
   font-size: 20px;
   position: fixed;
   right: 20px;
@@ -139,6 +139,20 @@ header .login_signup a:focus{
   100%{
     transform: translateY(3px);
   }
+}
+
+
+/* styles for the scroll bar */
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: gray;
+    border-radius: 3px;
+    /* border: 2px solid rgb(43, 40, 40); */
+}
+body::-webkit-scrollbar-thumb{
+    background: #3f0196;
+    border-radius: 3px;
 }
 
 /* Footer Section */
