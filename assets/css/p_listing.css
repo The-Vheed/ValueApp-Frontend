@@ -76,7 +76,7 @@
 .mp_placeholder{
   left: 18px;
 }
-.filter_btn{
+/* .filter_btn{
   margin: 0 15px;
   width: 80px;
   height: auto;
@@ -85,7 +85,7 @@
   border-radius: 10px;
   color: white;
   background: #2d0c5c;
-}
+} */
 .sale_houses_title{
   font-size: 20px;
   font-weight: 600;
@@ -114,10 +114,10 @@
   position: relative;
 }
 .full_view{
-  color: white;
-  background: purple;
-  padding: 5px 7px;
-  border-radius: 5pc;
+  /* color: white; */
+  /* background: purple; */
+  /* padding: 5px 7px; */
+  /* border-radius: 5pc; */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -174,13 +174,13 @@
   justify-content: space-between;
   align-items: center;
 }
-.purchase_btn{
+/* .purchase_btn{
   background: #2d0c5c;
   color: white;
   padding: 10px 32px;
   border-radius: 20px;
   border: none;
-}
+} */
 .prop_price{
   font-size: 22px;
   font-weight: bold;
@@ -208,17 +208,17 @@
 }
 .latest_prop_email{
   padding: 10px 15px;
-  width: 130px;
+  width: 100px;
   border-radius: 20px 0 0 20px;
   border: 1px solid #2d0c5c;
   outline: none;
 }
 .latest_prop_sub_btn{
-  color: white;
-  background: #2d0c5c;
-  outline: none;
+  /* color: white;
+  background: #2d0c5c; */
+  /* outline: none; */
   padding: 0 20px;
-  border: none;
+  /* border: none; */
   border-radius: 0 20px 20px 0;
 }
 
@@ -227,7 +227,7 @@
   font-weight: bold;
   margin: 6px 0 8px;
 }
-.request_btn{
+/* .request_btn{
   color: white;
   background: #2d0c5c;
   border: none;
@@ -235,7 +235,7 @@
   padding: 10px 26px;
   border-radius: 20px;
   margin: 8px 0 6px;
-}
+} */
 
 .advanced_search_cont{
   display: flex;

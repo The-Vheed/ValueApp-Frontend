@@ -31,22 +31,22 @@ navToggle.addEventListener("click", () => {
   close.classList.toggle("bx-x");
 });
 
-let btn_effect = document.querySelectorAll('.btn_effect');
-let btn_ripple = document.querySelectorAll('.btn_ripple');
+// let btn_effect = document.querySelectorAll('.btn_effect');
+// let btn_ripple = document.querySelectorAll('.btn_ripple');
 
-for (let x = 0; x < btn_effect.length; x++) {
-  for (let x = 0; x < btn_ripple.length; x++) {
-    btn_effect[x].addEventListener('click', () => {
-      btn_ripple[x].classList.add('ripple_ani')
-      setTimeout(() => {
-        btn_ripple[x].style.display = 'none'
-      }, 700);
-      setTimeout(() => {
-        btn_ripple[x].classList.remove('ripple_ani')
-      }, 710);
-      setTimeout(() => {
-        btn_ripple[x].style.display = 'flex'
-      }, 720);
-    });
-  }
-}
+// for (let x = 0; x < btn_effect.length; x++) {
+//   for (let x = 0; x < btn_ripple.length; x++) {
+//     btn_effect[x].addEventListener('click', () => {
+//       btn_ripple[x].classList.add('ripple_ani')
+//       setTimeout(() => {
+//         btn_ripple[x].style.display = 'none'
+//       }, 700);
+//       setTimeout(() => {
+//         btn_ripple[x].classList.remove('ripple_ani')
+//       }, 710);
+//       setTimeout(() => {
+//         btn_ripple[x].style.display = 'flex'
+//       }, 720);
+//     });
+//   }
+// }
