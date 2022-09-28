@@ -212,6 +212,16 @@ padding: 18px 4% 0px 4%;
   width: 90%;
 }
 
+.h_img_cont{
+  overflow: hidden;
+}
+.h_img{
+  transition: .4s;
+}
+.h_img:hover{
+  transform: scale(1.1);
+}
+
 /* Media Queries */
 @media screen and (max-width: 880px) {
   header .branding {
