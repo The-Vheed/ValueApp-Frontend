@@ -340,6 +340,10 @@ img {
 .cards-flex .testimonial-author {
   flex: 0 0 35%;
 }
+.author_img{
+  width: 100px;
+  border-radius: 50%;
+}
 .cards-flex .testimonial-info {
   display: flex;
   flex: 0 0 55%;
