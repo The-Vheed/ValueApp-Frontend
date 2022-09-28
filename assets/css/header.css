@@ -148,12 +148,44 @@ body::-webkit-scrollbar{
     width: 10px;
     background: gray;
     border-radius: 3px;
-    /* border: 2px solid rgb(43, 40, 40); */
 }
 body::-webkit-scrollbar-thumb{
     background: #3f0196;
     border-radius: 3px;
 }
+
+
+
+/* style for the text lines */
+.va_line_cont {
+  display: flex;
+  align-items: center;
+}
+.va_line {
+  width: 30px;
+  height: 2px;
+  background: purple;
+  margin-right: 60px;
+  position: relative;
+}
+.va_line::after {
+  content: '';
+  height: 2px;
+  width: 25px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 5px);
+}
+.va_line::before {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 25px + 10px);
+}
+
+
 
 /* Footer Section */
 footer {
