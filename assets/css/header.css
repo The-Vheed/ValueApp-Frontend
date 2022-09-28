@@ -114,13 +114,14 @@ header .login_signup a:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: purple;
+  background: var(--main-color);
   font-size: 20px;
   position: fixed;
   right: 20px;
   bottom: 100%;
   cursor: pointer;
   transition: .8s linear;
+  color: white;
 }
 .scroll_top_show{
   bottom: 20px;
