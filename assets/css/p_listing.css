@@ -3,7 +3,6 @@
 }
 .va_input:focus + .placeholder{
   top: 0px;
-  color: black;
   color: gray;
 }
 .placeholder{
