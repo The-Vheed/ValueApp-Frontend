@@ -50,6 +50,7 @@ h3 {
 header {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 3000;
   background-color: var(--main-color);
   box-shadow: 1px 1px 5px #a9a9a9;
