@@ -83,6 +83,9 @@ header .nav-list {
   justify-content: space-between;
   gap: 2rem;
 }
+.nav-item{
+  position: relative;
+}
 header .nav-list .nav-item a {
   color: #fff;
   font-weight: 600;
@@ -183,6 +186,24 @@ body::-webkit-scrollbar-thumb{
   background: indigo;
   position: absolute;
   left: calc(100% + 25px + 10px);
+}
+
+
+/* style for the nav lines */
+.nav_line{
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -5px;
+  left: 0;
+  transition: .6s;
+}
+.nav_line_expand{
+  width: 100%;
+}
+.nav-item:hover .nav_line{
+  width: 100%;
 }
 
 
@@ -303,6 +324,7 @@ padding: 18px 4% 0px 4%;
   align-items: center;
   transform: translate(-50%, -50%);
   display: none;
+  z-index: 10000;
 }
 ._view_img{
   display: flex;
@@ -311,6 +333,14 @@ padding: 18px 4% 0px 4%;
 }
 .view_image{
   width: 90%;
+}
+.x {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
 }
 
 .h_img_cont{
