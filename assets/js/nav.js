@@ -75,3 +75,20 @@ if (scroll_top != null) {
     }
   });
 }
+
+
+let va_input = document.querySelectorAll('.va_input');
+let placeholder = document.querySelectorAll('.placeholder');
+
+let c = 0;
+for (let x = 0; x < va_input.length; x++) {
+  for (let x = 0; x < placeholder.length; x++) {
+    va_input[x].addEventListener('blur', function () {
+      if (va_input[x].value != '') {
+        placeholder[x].style.top = '0px';
+      } else {
+        placeholder[x].style.top = '';
+      }
+    });
+  }
+}

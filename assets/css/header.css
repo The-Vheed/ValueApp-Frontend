@@ -359,7 +359,7 @@ padding: 18px 4% 0px 4%;
   transition: .3s;
   pointer-events: none;
   padding: 4px 8px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background: white;
   color: gray;
 }
