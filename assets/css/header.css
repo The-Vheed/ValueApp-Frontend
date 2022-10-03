@@ -343,6 +343,27 @@ padding: 18px 4% 0px 4%;
   cursor: pointer;
 }
 
+.input_group{
+  position: relative;
+}
+.va_input:focus + .placeholder{
+  top: 0px;
+  color: gray;
+}
+.placeholder{
+  position: absolute;
+  left: 6px;
+  top: 47%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  transition: .3s;
+  pointer-events: none;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: white;
+  color: gray;
+}
+
 .h_img_cont{
   overflow: hidden;
   width: 100%;
