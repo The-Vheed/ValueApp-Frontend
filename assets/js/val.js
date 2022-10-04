@@ -39,6 +39,22 @@ next.addEventListener('click', function () {
         $('.form1').addClass('form1_move')
         $('.form2').addClass('form2_move')
         $('.simple_full_val_cont').addClass('cont_inc')
+
+
+        var r = window.matchMedia("(max-width: 550px)")
+        myFunction(r)
+        r.addListener(myFunction)
+
+
+        function myFunction(x) {
+            if (r.matches) {
+              $('.form2').removeClass('form2_move')
+              $('.form2').addClass('form2_moveS')
+            } else {
+                $('.form2').addClass('form2_move')
+              $('.form2').removeClass('form2_moveS')
+            }
+        }
     }
 });
 
@@ -61,6 +77,22 @@ $('.stage2').click(function () {
         $('.form1').addClass('form1_move')
         $('.form2').addClass('form2_move')
         $('.simple_full_val_cont').addClass('cont_inc')
+
+
+        var r = window.matchMedia("(max-width: 550px)")
+        myFunction(r)
+        r.addListener(myFunction)
+
+
+        function myFunction(x) {
+            if (r.matches) {
+              $('.form2').removeClass('form2_move')
+              $('.form2').addClass('form2_moveS')
+            } else {
+                $('.form2').addClass('form2_move')
+              $('.form2').removeClass('form2_moveS')
+            }
+        }
     }
 });
 

@@ -421,9 +421,7 @@
     .progress_bar{
         width: 70%;
     }
-    .form2_move{
-        transform: translateY(-72%);
-    }
+
     .next , .send2{
         width: 53%;
     }
@@ -468,6 +466,13 @@
 
 
 
+.form2_move{
+    transform: translateY(-105%);
+}
+
+.form2_moveS{
+    transform: translateY(-72%);
+}
 
 
 
@@ -478,9 +483,7 @@
 .form1_move{
     transform: translateY(-110%);
 }
-.form2_move{
-    /* transform: translateY(-105%); */
-}
+
 .show1{
     display: block;
 }
