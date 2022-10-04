@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box Icons CDN -->
+  <!-- <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+  <!-- Custom Styling -->
+  <!-- <link rel="stylesheet" href="assets/boxicons/css/boxicons.css"> -->
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/val.css">
+  <link rel="stylesheet" href="assets/css/main_responsive.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
+
+  <title>Valueapp || Home</title>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="branding">
+        <h3>Value<span>App</span></h3>
+      </div>
+      <ul id="nav-list" data-visible="false" class="nav-list">
+        <li class="nav-item"><div class="nav_line"></div><a href="index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="./about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
+      </ul>
+      <div class="login_signup">
+        <a href="./auth.html">Login / Sign Up</a>
+      </div>
+      <a href="#" class="toggler" aria-controls="nav-list"><i class="bx bx-menu-alt-right"></i></a>
+    </header>
+    <main>
+        <div class="val_cont">
+            <div class="valuation_type_cont">
+                <div class="val_type_text">
+                    Please choose your type of valuation.
+                </div>
+                <div class="val_type_btn_cont">
+                    <button class="val_btn simple_val">
+                        simple valuation
+                    </button>
+                    <button class="val_btn full_val">
+                        full valuation
+                    </button>
+                </div>
+            </div>
+
+            <div class="val_cotn val_cotn1">
+                <div class="form_progress">
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                        <div class="stages stage1">
+                            <div class="stage_cont">
+                                1
+                                <text class="asset_info">Asset Information</text>
+                            </div>
+                        </div>
+                        <div class="stages stage2">
+                            <div class="stage_cont">
+                                2
+                                <text class="asset_info">Land Information</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="val_text simple_val_text">
+                    valuation form
+                    <br>
+                    simple valuation
+                </div>
+                <div class="rechoose_val_cont">
+                    <button class="rechoose_val">Rechoose valution type</button>
+                </div>
+                <div class="simple_full_val_cont">
+                    <form action="" class="form1 simple_val_form">
+                        <div class="input_group">
+                            <input type="text" class="asset_name form_input stage1_inp inp_1 va_input">
+                            <label class="placeholder">Name of Asset</label>
+                        </div>
+                        <div class="input_group">
+                            <textarea type="text" class="asset_description form_input txarea stage1_inp inp_2 va_input"></textarea>
+                            <label class="placeholder">Discription of Asset</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" class="form_input stage1_inp inp_3 va_input">
+                            <label class="placeholder">Address</label>
+                        </div>
+                        <div class="location_iputs">
+                            <div class="input_group">
+                                <input type="number" min="0" class="inner_inps location_inp form_input stage1_inp inp_4 va_input">
+                                <label class="placeholder">Latitude</label>
+                            </div>
+                            <div class="input_group">
+                                <input type="number" min="0" class="inner_inps location_inp form_input stage1_inp inp_5 va_input">
+                                <label class="placeholder">Longitude</label>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" class="form_input stage1_inp inp_6 va_input">
+                            <label class="placeholder">Name of document</label>
+                        </div>
+                        <div class="next_btn">
+                            <button type="button" class="next">NEXT</button>
+                        </div>
+                    </form>
+                    <form action="" class="form2 simple_val_form">
+                        <div class="prop_doc_type form_select_cont">
+                            <select class="prop_type form_select form2_inp inp21" id="">
+                                <option disabled selected value="">Select property type</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Residential">Residential</option>
+                            </select>
+                            <select class="doc_type form_select form2_inp inp22" id="">
+                                <option disabled selected value="">Select type of title document</option>
+                                <option value="Approved Survey Plan">Approved Survey Plan</option>
+                                <option value="Assent">Assent</option>
+                                <option value="Certificate of Occupancy">Certificate of Occupancy</option>
+                                <option value="Contract of Sale">Contract of Sale</option>
+                                <option value="Excision and Gazette">Excision and Gazette</option>
+                                <option value="Deed of Assignment">Deed of Assignment</option>
+                                <option value="Deed of gift">Deed of gift</option>
+                                <option value="Deed of Mortgage">Deed of Mortgage</option>
+                                <option value="Governor's Consent">Governor's Consent</option>
+                                <option value="Grant of Probate">Grant of Probate</option>
+                                <option value="Judgement of Court">Judgement of Court</option>
+                                <option value="Land Purchase Receipt">Land Purchase Receipt</option>
+                                <option value="Letter of Administration">Letter of Administration</option>
+                            </select>
+                        </div>
+                        <div class="env_road_type form_select_cont">
+                            <select class="env_type form_select form2_inp inp23" id="">
+                                <option disabled selected value="">Select environmental quality</option>
+                                <option value="very high">very high</option>
+                                <option value="high">high</option>
+                                <option value="medium">medium</option>
+                                <option value="low">low</option>
+                                <option value="very low">very low</option>
+                            </select>
+                            <select class="road_type form_select form2_inp inp24" id="">
+                                <option disabled selected value="">Select road quality</option>
+                                <option value="very high">very high</option>
+                                <option value="high">high</option>
+                                <option value="medium">medium</option>
+                                <option value="low">low</option>
+                                <option value="very low">very low</option>
+                            </select>
+                        </div>
+                        <div class="input_cont land_size_floor_no">
+                            <div class="input_group">
+                                <input type="number" min="0" class="form_select form2_inp inp25 va_input">
+                                <label class="placeholder">Est. land size</label>
+                            </div>
+                            <div class="input_group">
+                                <input type="number" min="0" class="form_select form2_inp inp26 va_input">
+                                <label class="placeholder">Total No of floors</label>
+                            </div>
+                        </div>
+                        <div class="input_cont land_size_floor_no">
+                            <div class="input_group">
+                                <input type="number" min="0" class="form_select form2_inp inp27 va_input">
+                                <label class="placeholder">Total No of rooms</label>
+                            </div>
+                            <div class="input_group">
+                                <input type="number" min="0" class="form_select form2_inp inp28 va_input">
+                                <label class="placeholder">Total No of kitchen</label>
+                            </div>
+                        </div>
+                        <div class="env_road_type form_select_cont">
+                            <select class="env_type form_select form2_inp inp29" id="">
+                                <option disabled selected value="">Avarage bedroom quality</option>
+                                <option value="very high">very high</option>
+                                <option value="high">high</option>
+                                <option value="medium">medium</option>
+                                <option value="low">low</option>
+                                <option value="very low">very low</option>
+                            </select>
+                            <select class="road_type form_select form2_inp inp210" id="">
+                                <option disabled selected value="">Avarage kitchen quality</option>
+                                <option value="very high">very high</option>
+                                <option value="high">high</option>
+                                <option value="medium">medium</option>
+                                <option value="low">low</option>
+                                <option value="very low">very low</option>
+                            </select>
+                        </div>
+                        <div class="input_group val_purp">
+                            <input class="form_select  va_input inp211 form2_inp">
+                            <label class="placeholder">Purpose of valuation</label>
+                        </div>
+                        <div class="val_basics">
+                            <div class="basics_text">
+                                Basics of valution
+                            </div>
+                            <div class="basics_checks">
+                                <div class="open_check_cont">
+                                    <input id="open" type="checkbox">
+                                    <label class="basic_label" for="open">Open market value</label>
+                                </div>
+                                <div class="forced_check_cont">
+                                    <input id="forced" type="checkbox">
+                                    <label class="basic_label" for="forced">Forced sale value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose_file_cont">
+                            <input class="choose_file" type="file">
+                        </div>
+                        <div class="next_send_btn">
+                            <button type="button" class="prev">PREVIOUS</button>
+                            <button type="button" class="send">SEND</button>
+                        </div>
+                    </form>
+                    <div class="confirm_valuation">
+                        <div class="confirm_text_cont">
+                            <div class="confirm_text">
+                                Are you sure you want to request this valuation, <br> this so so so amount of dollars will be decucted from your account
+                            </div>
+                            <div class="btns">
+                                <button type="submit">Submit</button>
+                                <button class="cancel_valuation" type="button">cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="val_cotn val_cotn2">
+                <div class="val_text full_val_text">
+                    valuation form
+                    <br>
+                    full valuation
+                </div>
+                <div class="rechoose_val_cont">
+                    <button class="rechoose_val">Rechoose valution type</button>
+                </div>
+                <div class="simple_full_val_cont val_cont2">
+                    <form action="" class="form1 simple_val_form">
+                        <div class="input_group">
+                            <input type="text" class="asset_name form_input finp finp_1 va_input">
+                            <label class="placeholder">Name of Asset</label>
+                        </div>
+                        <div class="input_group">
+                            <textarea type="text" class="asset_description form_input txarea finp finp_2 va_input"></textarea>
+                            <label class="placeholder">Discription of Asset</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" class="form_input finp finp_3 va_input">
+                            <label class="placeholder">Address</label>
+                        </div>
+                        <div class="location_iputs">
+                            <div class="input_group">
+                                <input type="number" min="0" class="inner_inps location_inp form_input finp finp_4 va_input">
+                                <label class="placeholder">Latitude</label>
+                            </div>
+                            <div class="input_group">
+                                <input type="number" min="0" class="inner_inps location_inp form_input finp finp_5 va_input">
+                                <label class="placeholder">Longitude</label>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" class="form_input finp finp_6 va_input">
+                            <label class="placeholder">Name of document</label>
+                        </div>
+                        <div class="prop_doc_type form_select_cont">
+                            <select class="prop_type finp finp_7 form_select" id="">
+                                <option disabled selected value="">Select property type</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Residential">Residential</option>
+                            </select>
+                            <select class="doc_type finp finp_8 form_select" id="">
+                                <option disabled selected value="">Select type of title document</option>
+                                <option value="Approved Survey Plan">Approved Survey Plan</option>
+                                <option value="Assent">Assent</option>
+                                <option value="Certificate of Occupancy">Certificate of Occupancy</option>
+                                <option value="Contract of Sale">Contract of Sale</option>
+                                <option value="Excision and Gazette">Excision and Gazette</option>
+                                <option value="Deed of Assignment">Deed of Assignment</option>
+                                <option value="Deed of gift">Deed of gift</option>
+                                <option value="Deed of Mortgage">Deed of Mortgage</option>
+                                <option value="Governor's Consent">Governor's Consent</option>
+                                <option value="Grant of Probate">Grant of Probate</option>
+                                <option value="Judgement of Court">Judgement of Court</option>
+                                <option value="Land Purchase Receipt">Land Purchase Receipt</option>
+                                <option value="Letter of Administration">Letter of Administration</option>
+                            </select>
+                        </div>
+                        <div class="input_group">
+                            <input type="text" class="form_input finp finp_9 va_input">
+                            <label class="placeholder">Purpose of valuation</label>
+                        </div>
+                        <div class="val_basics">
+                            <div class="basics_text2">
+                                Basics of valuation
+                            </div>
+                            <div class="basics_checks2">
+                                <div class="open_check_cont">
+                                    <input id="open" type="checkbox">
+                                    <label class="basic_label2" for="open">Open market value</label>
+                                </div>
+                                <div class="forced_check_cont">
+                                    <input id="forced" type="checkbox">
+                                    <label class="basic_label2" for="forced">Forced sale value</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose_file_cont">
+                            <input class="choose_file2" type="file">
+                        </div>
+                        <div class="next_btn">
+                            <button type="button" class="send2">Submit</button>
+                        </div>
+                    </form>
+                    <div class="confirm_valuation confirm_valuation2">
+                        <div class="confirm_text_cont">
+                            <div class="confirm_text">
+                                22Are you sure you want to request this valuation, <br> this so so so amount of dollars will be decucted from your account
+                            </div>
+                            <div class="btns">
+                                <button type="submit">Submit</button>
+                                <button class="cancel_valuation" type="button">cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="footer-desc">
+          <h3>Value<span>App</span></h3>
+          <p>
+            Open source is a source code that is made freely available for 
+            possible modification and redistribution. These products may include
+            permissions to use the source code, design documents, or contents of
+            the product.
+          </p>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><i class="bx bxl-discord-alt bx-tada"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-twitter bx-tada"></i></a>
+        </div>
+      </div>
+      <div class="footer-sitemap">
+        <div class="sitemap">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="#">Explore Houses</a></li>
+            <li><a href="#">Sell Property</a></li>
+            <li><a href="#">Playoffs</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>Innovate</h3>
+          <ul>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Creative Markets</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Sellers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="rights">
+      <p> &copy; All rights reserved</p>
+    </div>
+    <div class="scroll_top">
+      <i class="scroll_top_icon fa-solid fa-angle-up"></i>
+    </div>
+  </div>
+
+  <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/val.js"></script>
+  <script src="assets/js/scrollReveal.js"></script>
+  <!-- <script src="assets/js/home.js"></script> -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/22922bdbe9.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
