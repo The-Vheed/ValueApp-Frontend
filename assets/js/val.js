@@ -21,8 +21,7 @@ next.addEventListener('click', function () {
         }
     }
     if ($('.inp_1').val() == '') {
-        // scrollTo(22, 0)
-        // alert(window.innerHeight - document.querySelector('.inp_1').getBoundingClientRect().top)
+        
     } else if ($('.inp21').val() == '') {
         
     } else if($('.inp_3').val() == ''){
@@ -32,8 +31,7 @@ next.addEventListener('click', function () {
     } else if($('.inp_5').val() == ''){
         
     } else if($('.inp_6').val() == ''){
-        // scrollTo(1000, 0)
-        // alert(window.innerHeight - document.querySelector('.inp_6').getBoundingClientRect().top)
+        
     } else {
         bar.classList.add('bar_inc')
         $('.form1').addClass('form1_move')
@@ -86,29 +84,60 @@ $('.stage2').click(function () {
 
         function myFunction(x) {
             if (r.matches) {
-              $('.form2').removeClass('form2_move')
-              $('.form2').addClass('form2_moveS')
+                $('.form2').removeClass('form2_move')
+                $('.form2').addClass('form2_moveS')
             } else {
                 $('.form2').addClass('form2_move')
-              $('.form2').removeClass('form2_moveS')
+                $('.form2').removeClass('form2_moveS')
             }
         }
     }
 });
 
 
-// alert($('.simple_full_val_cont').outerHeight(true))
+
 $('.prev').click(function () {
     bar.classList.remove('bar_inc')
     $('.form1').removeClass('form1_move')
     $('.form2').removeClass('form2_move')
     $('.simple_full_val_cont').removeClass('cont_inc')
+
+
+    var r = window.matchMedia("(max-width: 550px)")
+    myFunction(r)
+    r.addListener(myFunction)
+
+
+    function myFunction(x) {
+        if (r.matches) {
+            $('.form2').removeClass('form2_move')
+            $('.form2').removeClass('form2_moveS')
+        } else {
+            $('.form2').removeClass('form2_move')
+            $('.form2').removeClass('form2_moveS')
+        }
+    }
 });
 $('.stage1').click(function () {
     bar.classList.remove('bar_inc')
     $('.form1').removeClass('form1_move')
     $('.form2').removeClass('form2_move')
     $('.simple_full_val_cont').removeClass('cont_inc')
+
+    var r = window.matchMedia("(max-width: 550px)")
+    myFunction(r)
+    r.addListener(myFunction)
+
+
+    function myFunction(x) {
+        if (r.matches) {
+            $('.form2').removeClass('form2_move')
+            $('.form2').removeClass('form2_moveS')
+        } else {
+            $('.form2').removeClass('form2_move')
+            $('.form2').removeClass('form2_moveS')
+        }
+    }
 });
 
 $('.rechoose_val').click(function () {
