@@ -32,15 +32,15 @@
     <!-- Navbar -->
     <header>
       <div class="branding">
-        <h3>Value<span>App</span>.</h3>
+        <h3>Value<span>App</span></h3>
       </div>
       <ul id="nav-list" data-visible="false" class="nav-list">
-        <li class="nav-item"><a href="index.html">Home</a></li>
-        <li class="nav-item"><a href="valuation.html">Asset Valuation</a></li>
-        <li class="nav-item"><a href="p_listing.html">Property Listing</a></li>
-        <li class="nav-item"><a href="#">Services</a></li>
-        <li class="nav-item"><a href="./about.html">About Us</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="val.html">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="./about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
       </ul>
       <div class="login_signup">
         <a href="./auth.html">Login / Sign Up</a>
@@ -84,7 +84,10 @@
           </div>
         </div>
         <div class="services">
-          <p class="uppercase"><img src="assets/images/line-dark.png" alt=""> Our Services</p>
+          <div class="va_line_cont">
+            <div class="va_line"></div>
+            <p class="uppercase">our services</p>
+          </div>
           <h3>Comfort is our top priority for you</h3>
           <p class="services-info">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet ud amet.
@@ -103,7 +106,10 @@
     <!-- Viewed Properties -->
     <div class="views">
       <div class="views-tab">
-        <p class="uppercase"><img src="assets/images/line-dark.png" alt=""> Popular</p>
+        <div class="va_line_cont">
+          <div class="va_line"></div>
+          <p class="uppercase">popular</p>
+        </div>
         <p>Explore All <i class="bx bx-right-arrow-alt"></i></p>
       </div>
       <h3 class="uppercase">Most Viewed Properties</h3>
@@ -162,7 +168,10 @@
     <!-- Neighbourhood Guide -->
     <div class="views">
       <div class="views-tab">
-        <p class="uppercase"><img src="assets/images/line-dark.png" alt=""> Location</p>
+        <div class="va_line_cont">
+          <div class="va_line"></div>
+          <p class="uppercase">location</p>
+        </div>
         <p><i class="bx bx-left-arrow-alt"></i><i class="bx bx-right-arrow-alt"></i></p>
       </div>
       <h3 class="uppercase">Neighbourhood Guide</h3>
@@ -185,7 +194,10 @@
     <!-- The Team -->
     <div class="views">
       <div class="views-tab">
-        <p class="uppercase"><img src="assets/images/line-dark.png" alt=""> The Team</p>
+        <div class="va_line_cont">
+          <div class="va_line"></div>
+          <p class="uppercase">The team</p>
+        </div>
       </div>
       <h3 class="uppercase">Leading our way</h3>
       <p>
@@ -249,12 +261,16 @@
     <!-- Neighbourhood Guide -->
     <div class="views views-dark">
       <div class="views-tab">
-        <p><img src="assets/images/line-dark.png" alt=""> Testimonials </p>
+        <div class="va_line_cont">
+          <div class="va_line"></div>
+          <p class="uppercase">testimonials</p>
+        </div>
         <p><i class="bx bx-left-arrow-alt"></i><i class="bx bx-right-arrow-alt"></i></p>
       </div>
       <h3>What our customers say about us</h3>
       <div class="cards cards-flex">
         <div class="testimonial-author">
+          <img src="assets/images/1.jpg" alt="" class="author_img">
           <h3>Dev-Verified Danny</h3>
           <p>Lead Engineer</p>
         </div>
@@ -272,7 +288,7 @@
     <footer>
       <div class="footer-info">
         <div class="footer-desc">
-          <h3>Value<span>App</span>.</h3>
+          <h3>Value<span>App</span></h3>
           <p>
             Open source is a source code that is made freely available for 
             possible modification and redistribution. These products may include
@@ -320,11 +336,16 @@
     <div class="rights">
       <p> &copy; All rights reserved</p>
     </div>
+    <div class="scroll_top">
+      <i class="scroll_top_icon fa-solid fa-angle-up"></i>
+    </div>
   </div>
 
-  <script src="assets/js/scrollReveal.js"></script>
-  <script src="assets/js/nav.js"></script>
   <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/scrollReveal.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/nav.js"></script>
   <script src="assets/js/loader.js"></script>
+  <script src="https://kit.fontawesome.com/22922bdbe9.js" crossorigin="anonymous"></script>
 </body>
 </html>

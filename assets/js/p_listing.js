@@ -30,3 +30,17 @@ for (let x = 0; x < full_view.length; x++) {
 $('.x').click(function () {
   $('.view_img_cont').css('display', 'none');
 });
+
+let windowHeight = window.innerHeight;
+
+let navItem = document.querySelector('.nav-list :nth-child(3) .nav_line');
+let body = document.querySelector('body');
+
+
+function p_listnavline(){
+    let revealTop = body.getBoundingClientRect().top;
+    let revealPoint = 200;
+    if(revealTop < windowHeight - revealPoint){
+        navItem.classList.add('nav_line_expand')
+    }
+};p_listnavline()

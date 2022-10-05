@@ -118,3 +118,17 @@ window.addEventListener('scroll', () => {
     }, 1);
   }
 });
+
+let windowHeight = window.innerHeight;
+
+let navItem = document.querySelector('.nav-list :nth-child(5) .nav_line');
+let body = document.querySelector('body');
+
+
+function aboutnavline(){
+    let revealTop = body.getBoundingClientRect().top;
+    let revealPoint = 200;
+    if(revealTop < windowHeight - revealPoint){
+        navItem.classList.add('nav_line_expand')
+    }
+};aboutnavline()

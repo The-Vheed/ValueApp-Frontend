@@ -86,3 +86,17 @@ const quill = new Quill("#text-editor", {
   placeholder: "",
   theme: "snow"
 });
+
+let windowHeight = window.innerHeight;
+
+let navItem = document.querySelector('.nav-list :nth-child(2) .nav_line');
+let body = document.querySelector('body');
+
+
+function valnavline(){
+    let revealTop = body.getBoundingClientRect().top;
+    let revealPoint = 200;
+    if(revealTop < windowHeight - revealPoint){
+        navItem.classList.add('nav_line_expand')
+    }
+};valnavline()

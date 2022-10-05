@@ -50,3 +50,45 @@ navToggle.addEventListener("click", () => {
 //     });
 //   }
 // }
+
+
+// program for the scroll to top btn
+let scroll_top = document.querySelector('.scroll_top')
+
+
+
+if (scroll_top != null) {
+  $('.scroll_top').click(function () {
+    window.scrollTo(0, 10)
+  })
+  
+
+  window.addEventListener('scroll', function () {
+    let windowHeight = window.innerHeight;
+    let body = document.querySelector('body')
+    let revealTop = body.getBoundingClientRect().top;
+    let revealPoint = 1100;
+    if(revealTop < windowHeight - revealPoint){
+      scroll_top.classList.add('scroll_top_show')
+    } else {
+      scroll_top.classList.remove('scroll_top_show')
+    }
+  });
+}
+
+
+let va_input = document.querySelectorAll('.va_input');
+let placeholder = document.querySelectorAll('.placeholder');
+
+let c = 0;
+for (let x = 0; x < va_input.length; x++) {
+  for (let x = 0; x < placeholder.length; x++) {
+    va_input[x].addEventListener('blur', function () {
+      if (va_input[x].value != '') {
+        placeholder[x].style.top = '0px';
+      } else {
+        placeholder[x].style.top = '';
+      }
+    });
+  }
+}

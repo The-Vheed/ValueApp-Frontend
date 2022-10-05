@@ -83,6 +83,9 @@ header .nav-list {
   justify-content: space-between;
   gap: 2rem;
 }
+.nav-item{
+  position: relative;
+}
 header .nav-list .nav-item a {
   color: #fff;
   font-weight: 600;
@@ -104,6 +107,106 @@ header .login_signup a:focus{
   background-color: var(--button-focus-color);
   box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
 }
+
+/* styling for the scroll to top button */
+
+.scroll_top{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3f0196;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 100%;
+  cursor: pointer;
+  transition: .8s linear;
+  color: white;
+}
+.scroll_top_show{
+  bottom: 20px;
+}
+.scroll_top_icon{
+  animation: scroll_ani .6s infinite linear;
+}
+@keyframes scroll_ani {
+  0%{
+    transform: translateY(3px);
+  }
+  50%{
+    transform: translateY(-3px);
+  }
+  100%{
+    transform: translateY(3px);
+  }
+}
+
+
+/* styles for the scroll bar */
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: gray;
+    border-radius: 3px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #3f0196;
+    border-radius: 3px;
+}
+
+
+
+/* style for the text lines */
+.va_line_cont {
+  display: flex;
+  align-items: center;
+}
+.va_line {
+  width: 30px;
+  height: 2px;
+  background: purple;
+  margin-right: 60px;
+  position: relative;
+}
+.va_line::after {
+  content: '';
+  height: 2px;
+  width: 25px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 5px);
+}
+.va_line::before {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 25px + 10px);
+}
+
+
+/* style for the nav lines */
+.nav_line{
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -5px;
+  left: 0;
+  transition: .6s;
+}
+.nav_line_expand{
+  width: 100%;
+}
+.nav-item:hover .nav_line{
+  width: 100%;
+}
+
+
 
 /* Footer Section */
 footer {
@@ -221,6 +324,7 @@ padding: 18px 4% 0px 4%;
   align-items: center;
   transform: translate(-50%, -50%);
   display: none;
+  z-index: 10000;
 }
 ._view_img{
   display: flex;
@@ -229,6 +333,35 @@ padding: 18px 4% 0px 4%;
 }
 .view_image{
   width: 90%;
+}
+.x {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.input_group{
+  position: relative;
+}
+.va_input:focus + .placeholder{
+  top: 0px;
+  color: gray;
+}
+.placeholder{
+  position: absolute;
+  left: 6px;
+  top: 47%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  transition: .3s;
+  pointer-events: none;
+  padding: 4px 8px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  color: gray;
 }
 
 .h_img_cont{
@@ -305,6 +438,19 @@ button:focus{
     display: flex;
     align-items: center;
   }
+
+
+
+  /* navline */
+  .nav_line_expand{
+    width: 30%;
+  }
+  .nav-item:hover .nav_line{
+    width: 30%;
+  }
+
+
+
   footer {
     display: block;
     padding: 4rem 4rem 2rem;
@@ -330,6 +476,34 @@ button:focus{
     margin-bottom:  2rem;
   }
 }
+
+@media (max-width: 810px) {
+    /* navline */
+  .nav_line_expand{
+      width: 40%;
+    }
+    .nav-item:hover .nav_line{
+      width: 40%;
+    }
+  }
+@media (max-width: 700px) {
+    /* navline */
+  .nav_line_expand{
+      width: 50%;
+    }
+    .nav-item:hover .nav_line{
+      width: 50%;
+    }
+  }
+@media (max-width: 500px) {
+    /* navline */
+  .nav_line_expand{
+      width: 66%;
+    }
+    .nav-item:hover .nav_line{
+      width: 66%;
+    }
+  }
 
 @media screen and (max-width: 480px) {
   header {
