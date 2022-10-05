@@ -242,7 +242,7 @@ padding: 18px 4% 0px 4%;
   transform: scale(1.1);
 }
 
-button{
+/* button{
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -264,7 +264,7 @@ button:focus{
 .ripple_ani{
   width: 500px;
   height: 500px;
-}
+} */
 
 /* Media Queries */
 @media screen and (max-width: 1000px) {
