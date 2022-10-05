@@ -1,9 +1,13 @@
-const prevBtns = document.querySelectorAll(".btn-prev");
-const nextBtns = document.querySelectorAll(".btn-next");
-const progress = document.getElementById("progress");
-const formSteps = document.querySelectorAll(".form-step");
-const progressSteps = document.querySelectorAll(".progress-step");
-const navBar = document.getElementById("navbar-nav");
+var prevBtns = document.querySelectorAll(".btn-prev");
+var nextBtns = document.querySelectorAll(".btn-next");
+var progress = document.getElementById("progress");
+var formSteps = document.querySelectorAll(".form-step");
+var progressSteps = document.querySelectorAll(".progress-step");
+var navBar = document.getElementById("navbar-nav");
+var btnActive = document.getElementById("btn-active");
+var btnFullActive = document.getElementById("btn-full-active");
+var formStep = document.getElementById("form-step");
+var propertyHide = document.getElementsByClassName("property");
 
 let formStepsNum = 0;
 
@@ -39,8 +43,49 @@ function updateProgressBar() {
   });
 
   var progressActive = document.querySelectorAll(".progress-step-active");
-  progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1) * 100 + "%");
+  progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1) * 95 + "%");
 }
+
+formStep.classList.add("hide");
+
+btnActive.addEventListener("click", () => {
+  formStep.classList.toggle("hide");
+  document.getElementById("postal-code").classList.remove("hide");
+
+  for (var property of propertyHide) {
+    property.classList.remove("hide");
+  }
+});
+
+btnFullActive.addEventListener("click", () => {
+  formStep.classList.toggle("hide");
+  document.getElementById("postal-code").classList.add("hide");
+      
+  for (var property of propertyHide) {
+    property.classList.add("hide");
+  }
+});
+
+// QuillJS Customization
+function selectLocalImage() {}
+
+const quill = new Quill("#text-editor", {
+  modules: {
+    toolbar: {
+      container: [
+        [{ header: [1, 2, 3, 4, false] }],
+        ["bold", "italic", "underline"],
+        ["link", "image", "blockquote", "code-block"],
+        [{ list: "ordered" }, { list: "bullet" }]
+      ],
+      handlers: {
+        image: selectLocalImage
+      },
+    },
+  },
+  placeholder: "",
+  theme: "snow"
+});
 
 let windowHeight = window.innerHeight;
 

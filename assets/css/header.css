@@ -375,7 +375,7 @@ padding: 18px 4% 0px 4%;
   transform: scale(1.1);
 }
 
-button{
+.o-btn {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -387,14 +387,14 @@ button{
   border-radius: var(--button-border-radius);
   box-shadow: 0px 0px 5px var(--button-shadow-color);
 }
-button:hover{
+.o-btn:hover {
   background-color: var(--button-focus-color);
 }
-button:focus{
+.o-btn:focus {
   background-color: var(--button-focus-color);
   box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
 }
-.ripple_ani{
+.ripple_ani {
   width: 500px;
   height: 500px;
 }
