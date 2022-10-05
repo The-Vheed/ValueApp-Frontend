@@ -325,7 +325,9 @@ textarea.input-control {
   border: 1px solid #e2e9f3;
 }
 .admin-table table th, .admin-table table, td {
-  padding: 12px;
+  padding: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: left;
 }
 .admin-table table td a {
