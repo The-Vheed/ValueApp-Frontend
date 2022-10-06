@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box Icons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom Styling -->
+  <!-- <link rel="stylesheet" href="../assets/boxicons/css/boxicons.css"> -->
+  <link rel="stylesheet" href="../assets/quill/quill.snow.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../user/style.css">
+  <link rel="stylesheet" href="styleOverride.css">
+
+  <title>ValueApp || Request a Valuation</title>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="branding">
+        <h3>Value<span>App</span></h3>
+      </div>
+      <ul id="nav-list" data-visible="false" class="nav-list">
+        <li class="nav-item"><div class="nav_line"></div><a href="index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="val.html">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="./about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
+      </ul>
+      <!-- <div class="login_signup">
+        <a href="./auth.html">Login / Sign Up</a>
+      </div> -->
+      <div class="profile">
+        <img src="../assets/images/6.jpg" alt="">
+        <div class="profile-details">
+          <p>Charles Emmanuel</p>
+          <small>#4,500,000</small>
+        </div>
+      </div>
+      <a href="#" class="toggler" aria-controls="nav-list"><i class="bx bx-menu-alt-right"></i></a>
+    </header>
+
+    <!-- Property Valuation Form -->
+    <div class="form-container animate">
+      <form action="#" method="post" class="admin-form md-box" enctype="multipart/form-data">
+        <div class="table-actions">
+          <div class="table-buttons">
+            <a href="#" id="btn-active" class="btn success-btn small-btn">
+              <i class="bx bxs-book-content icon"></i> Request Simple Valuation
+            </a>
+            <a href="#" id="btn-full-active" class="btn primary-btn small-btn">
+              <i class="bx bxs-book-open icon"></i> Request Full Valuation
+            </a>
+          </div>
+        </div>
+        <h1 class="center form-title">Valuation Request Form</h1>
+        <!-- <ul class="form-errors">
+          <li>Username required</li>
+          <li>Email required</li>
+        </ul> -->
+        <!-- Progress bars -->
+        <div class="progressBar">
+          <div class="progress" id="progress"></div>
+    
+          <div class="progress-step progress-step-active" data-title="Asset Information"></div>
+          <div class="progress-step" data-title="Land Information"></div>
+        </div>
+
+        <div class="form-step form-step-active" id="form-step">
+          <div class="input-group">
+            <label for="title">Name of Asset</label>
+            <input type="text" name="title" id="title">
+          </div>
+          <div class="input-group">
+            <label for="post-editpr">Description of Asset</label>
+            <div id="text-editor" class="text-editor">
+        
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="title">Address</label>
+            <input type="text" name="title" id="title">
+          </div>
+          <div class="input-group" id="postal-code">
+            <label for="title">Postal Code</label>
+            <input type="text" name="title" id="title">
+          </div>
+          <div class="input-group-flex">
+            <div class="input-group">
+              <label for="dob">Latitude</label>
+              <input type="number" name="" id="">
+            </div>
+            <div class="input-group">
+              <label for="dob">Longitude</label>
+              <input type="number" name="" id="">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="">Name of Title Document</label>
+            <input type="text">
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-next width-50 ml-auto">Next <i class="bx bx-right-arrow-alt bx-fade-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="form-step" id="form-step">
+          <div class="input-group-flex">
+            <div class="input-group">
+              <label for="">Type of Property</label>
+              <select name="" id="">
+                <option value="">Select property type</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="disabled">Type of Title Doc.</label>
+              <select name="" id="">
+                <option value="">Select type of title document</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group-flex property">
+            <div class="input-group">
+              <label for="">Env. Quality</label>
+              <select name="" id="">
+                <option value="">Select environment quality</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="">Road Quality</label>
+              <select name="" id="">
+                <option value="">Select road quality</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group-flex property">
+            <div class="input-group">
+              <label for="">Est. Land Size (Sq. Mtrs)</label>
+              <input type="number" name="">
+            </div>
+            <div class="input-group">
+              <label for="">Total No. of Floors</label>
+              <input type="number">
+            </div>
+          </div>
+          <div class="input-group-flex property">
+            <div class="input-group">
+              <label for="">Total No. of Bedrooms</label>
+              <input type="number" name="">
+            </div>
+            <div class="input-group">
+              <label for="nationality">Avg. Bedroom Quality</label>
+              <input type="number" name="">
+            </div>
+          </div>
+          <div class="input-group-flex property">
+            <div class="input-group">
+              <label for="">Total No. of Kitchens</label>
+              <input type="number" name="">
+            </div>
+            <div class="input-group">
+              <label for="nationality">Avg. Kitchen Quality</label>
+              <input type="number" name="">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="nationality">Purpose of Valuation</label>
+            <input type="text" name="">
+          </div>
+          <div class="input-group">
+            <label for="nationality">Basis of Valuation</label>
+            <div class="label-flex">
+              <label for="" class="">
+                <input type="checkbox" name=""> Open Market Value
+              </label>
+              <label for="" class="">
+                <input type="checkbox" name=""> Forced Sale Value
+              </label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="nationality">Asset Images</label>
+            <input type="file" name="" id="">
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <input type="submit" name="register-btn" value="Submit" class="btn">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="../assets/js/jQuery.js"></script>
+  <script src="../assets/js/scrollReveal.js"></script>
+  <script src="../assets/quill/quill.js"></script>
+  <script src="../assets/js/form.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="https://kit.fontawesome.com/22922bdbe9.js" crossorigin="anonymous"></script>
+</body>
+</html>
