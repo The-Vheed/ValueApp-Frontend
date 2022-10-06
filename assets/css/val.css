@@ -29,13 +29,9 @@
     padding: 30px;
     margin: 10px 25px;
 }
-
-.placeholder{
-    background: rgb(204, 204, 204);
-    left: 20px;
-    padding: 5px 14px;
-    font-size: 17px;
-    color: rgb(34, 33, 33);
+.input_label{
+    font-size: 16px;
+    margin: 0 0 5px 10px;
 }
 
 
@@ -89,7 +85,7 @@
 }
 .form_input{
     width: 100%;
-    padding: 20px;
+    padding: 13px;
     border-radius: 8px;
     background: rgb(204, 204, 204);
     outline: none;
@@ -195,8 +191,12 @@
     justify-content: space-between;
     margin: 10px 0;
 }
-.form_select{
+.select_cont{
     width: 49%;
+    margin: 10px 0;
+}
+.form_select{
+    width: 100%;
     padding: 10px;
     margin: 3px 0;
     border-radius: 8px;
@@ -394,6 +394,9 @@
     .land_size_floor_no .input_group{
         width: 98%;
     }
+    .select_cont{
+        width: 100%;
+    }
     .form_select{
         width: 98%;
         margin: 5px 0;
@@ -402,7 +405,7 @@
         height: 1000px !important;
     } */
     .cont_inc{
-        height: 1000px !important;
+        height: 1325px !important;
         /* background: red; */
     }
     .basics_checks , .basics_checks2{
@@ -442,9 +445,6 @@
     .next_send_btn button{
         width: 49%;
     }
-    .placeholder{
-        left: 10px;
-    }
 }
 @media (max-width: 260px) {
     .rechoose_val_cont{
@@ -466,11 +466,15 @@
 
 
 .form2_move{
-    transform: translateY(-105%);
+    transform: translateY(-90%);
 }
 
 .form2_moveS{
-    transform: translateY(-72%);
+    transform: translateY(-58%);
+}
+
+.cont_inc{
+    height: 880px;
 }
 
 
