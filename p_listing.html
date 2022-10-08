@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box Icons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="assets/boxicons/css/boxicons.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main_responsive.css">
+  <link rel="stylesheet" href="assets/css/p_listing.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
+
+  <title>Valueapp || Property Listing</title>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="branding">
+        <h3>Value<span>App</span></h3>
+      </div>
+      <ul id="nav-list" data-visible="false" class="nav-list">
+        <li class="nav-item"><div class="nav_line"></div><a href="index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="val.html">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="./about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
+      </ul>
+      <div class="login_signup">
+        <a href="./auth.html">Login / Sign Up</a>
+      </div>
+      <a href="#" class="toggler" aria-controls="nav-list"><i class="bx bx-menu-alt-right"></i></a>
+    </header>
+
+    <main>
+
+      <div class="sale_inputs_cont animate">
+        <div class="gbg sale_inputs">
+          <div class="search_sale_inputs">
+            <select class="sale_options" id="">
+              <option disabled selected value="">For sale</option>
+              <option value="saling">selling</option>
+              <option value="saling">buying</option>
+            </select>
+            <div class="input_group">
+              <input type="text" class="search_pid va_input">
+              <label class="placeholder">Search by PID address</label>
+            </div>
+          </div>
+          <div class="sales_search">
+            <div class="input_group">
+              <input type="text" class="min_price va_input">
+              <label class="mp_placeholder placeholder">Min price</label>
+            </div>
+            <div class="input_group">
+              <input type="text" class="max_price va_input">
+              <label class="mp_placeholder placeholder">Max price</label>
+            </div>
+            <button class="o-btn filter_btn">Filter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="property_listing_main_cont spacing_container animate">
+        <div class="propert_title_cont">
+          <div class="prop_text">
+            <div class="prop_line"></div>
+            <div class="txc prop_tx_title"> PROPERTIES </div>
+          </div>
+          <div class="sale_houses_title">
+            <text class="txc1">HOUSES FOR</text> <text class="txc2">SALE IN NIGERIA</text>
+          </div>
+        </div>
+
+        <div class="property_display_cont animate">
+          <div class="property_display">
+            <div class="gbg property_display_box">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+
+            <div class="gbg property_display_box animate">
+              <div class="h_img_cont property_img_cont">
+                <img src="assets/images/building.jpg" alt="" class="h_img property_img">
+                <button class="o-btn full_view">Full View</button>
+              </div>
+              <div class="txc property_info_cont">
+                <div class="prop_location">
+                  <i class="prop_icon fa-solid fa-location-dot"></i> Ibadan, Owerri
+                </div>
+                <div class="prop_info">
+                  <i class="prop_icon bx bx-bed"></i> 8 beds &nbsp;&nbsp; <div class="br1"><br></div> <i class="prop_icon bx bx-bath"></i> 8 bathrooms &nbsp;&nbsp; <div class="br2"><br></div> <i class="prop_icon fa-solid fa-arrows-left-right"></i> 10 x 10 m
+                </div>
+                <div class="prop_price_cont">
+                  <button class="o-btn pbg purchase_btn">Purchase</button>
+                  <text class="prop_price">$6,300,455</text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property_search_info animate">
+            <div class="div1">
+              <div class="gbg txc latest_prop property_search_info_content">
+                <div class="latest_prop_title">
+                  Get Latest Properties
+                </div>
+                <div class="latest_prop_tx">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing.
+                </div>
+                <div class="latest_prop_sub_cont">
+                  <div class="input_group">
+                    <input type="text" class="latest_prop_email va_input">
+                    <label class="placeholder">Email</label>
+                  </div>
+                  <button class="o-btn latest_prop_sub_btn">Subscribe</button>
+                </div>
+              </div>
+
+              <div class="gbg txc request_cont property_search_info_content">
+                <div class="request_title">
+                  Can't Find What You're Looking For?
+                </div>
+                <button class="o-btn request_btn">POST A REQUEST</button>
+              </div>
+            </div>
+
+            <div class="div2 animate">
+              <div class="gbg txc advanced_search_cont property_search_info_content">
+                <div class="advanced_search_title">Advanced search</div>
+                <div class="ad_inp ad_input_group input_group">
+                  <input type="text" class="advanced_search_location_input va_input">
+                  <label class="placeholder">Enter location</label>
+                </div>
+                <select class="ad_inp ad_sale_options" id="">
+                  <option selected disabled value="For sale">For sale</option>
+                  <option value="Not for sale">Not for sale</option>
+                  <option value="Always for sale">Always for sale</option>
+                </select>
+                <div class="ad_inp ad_inp_select ad_house_bed_option">
+                  <select class="house_option" id="">
+                    <option selected disabled value="Houses">Houses</option>
+                    <option value="Mansions">Mansions</option>
+                    <option value="Castles">Castles</option>
+                  </select>
+                  <select class="bed_option" id="">
+                    <option selected disabled value="Beds">Beds</option>
+                    <option value="Mats">Mats</option>
+                    <option value="Carton">Carton</option>
+                  </select>
+                </div>
+                <div class="ad_inp ad_inp_select ad_min_max_price">
+                  <select class="ad_min_price" id="">
+                    <option selected disabled value="Min price">Min price</option>
+                    <option value="$10000">$50000</option>
+                    <option value="$30000">$30000</option>
+                  </select>
+                  <select class="ad_max_price" id="">
+                    <option selected disabled value="Max price">Max price</option>
+                    <option value="$9000">$9000</option>
+                    <option value="$7000">$7000</option>
+                  </select>
+                </div>
+                <button class="o-btn ad_btn">Search</button>
+              </div>
+
+              <div class="gbg txc similar_result_cont property_search_info_content animate">
+                <div class="sr_title">
+                  Similar results
+                </div>
+                <select class="txc sa_select prop_loaclities" id="">
+                  <option selected disabled value="Property localities">Property localities</option>
+                  <option value="$9000">$9000</option>
+                  <option value="$7000">$7000</option>
+                </select>
+                <select class="txc sa_select prop_type" id="">
+                  <option selected disabled value="Property type">Property type</option>
+                  <option value="$9000">$9000</option>
+                  <option value="$7000">$7000</option>
+                </select>
+                <select class="txc sa_select explor_rel_searched" id="">
+                  <option selected disabled value="Explore related searches">Explore related searches</option>
+                  <option value="$9000">$9000</option>
+                  <option value="$7000">$7000</option>
+                </select>
+                <select class="txc sa_select nearby" id="">
+                  <option selected disabled value="nearby">nearby</option>
+                  <option value="$9000">$9000</option>
+                  <option value="$7000">$7000</option>
+                </select>
+                <select class="txc sa_select states" id="">
+                  <option selected disabled value="states">states</option>
+                  <option value="$9000">$9000</option>
+                  <option value="$7000">$7000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination_cont">
+          <div class="pagination_box_cont">
+            <div class=" pagination_box">1</div>
+            <div class="wbg pagination_box">2</div>
+            <div class="wbg pagination_box">3</div>
+            <div class="wbg pagination_box">4</div>
+            <div class="wbg pagination_box">5</div>
+            <div class="wbg pagination_box">6</div>
+            <div class="wbg pagination_box"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed_elements">
+        <div class="view_img_cont">
+          <i class="x fa-solid fa-xmark"></i>
+          <div class="_view_img">
+            <img src="" alt="" class="view_image">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-desc">
+          <h3>Value<span>App</span></h3>
+          <p>
+            Open source is a source code that is made freely available for 
+            possible modification and redistribution. These products may include
+            permissions to use the source code, design documents, or contents of
+            the product.
+          </p>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><i class="bx bxl-discord-alt bx-tada"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-twitter bx-tada"></i></a>
+        </div>
+      </div>
+      <div class="footer-sitemap">
+        <div class="sitemap">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="#">Explore Houses</a></li>
+            <li><a href="#">Sell Property</a></li>
+            <li><a href="#">Playoffs</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>Innovate</h3>
+          <ul>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Creative Markets</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Sellers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="rights">
+      <p> &copy; All rights reserved</p>
+    </div>
+    <div class="scroll_top">
+      <i class="scroll_top_icon bx bx-chevron-up"></i>
+    </div>
+  </div>
+
+  <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/scrollReveal.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/p_listing.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="https://kit.fontawesome.com/22922bdbe9.js" crossorigin="anonymous"></script>
+</body>
+</html>

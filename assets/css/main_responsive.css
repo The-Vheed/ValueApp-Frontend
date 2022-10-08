@@ -1,0 +1,237 @@
+/* Media Queries */
+@media screen and (min-width: 1025px) {
+  .page-wrapper {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-wrapper {
+    height: 55vh;
+  }
+  .search-form .search-form-box {
+    width: 70%;
+    padding: 1rem 2rem;
+  }
+  .views .cards .card .card-info p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .page-wrapper {
+    height: 55vh;
+  }
+  .search-form {
+    padding: 2rem 0;
+  }
+  .search-form .search-form-box {
+    width: 75%;
+    padding: 1rem 2rem;
+  }
+  .views .cards .card .card-info p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .branding {
+    padding: 0;
+  }
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+  .page-wrapper {
+    display: flex;
+    padding: 5rem 2rem 4rem;
+    height: 40vh;
+  }
+  .page-wrapper .hero-text {
+    gap: 2rem;
+  }
+  .page-wrapper .hero-text .banner {
+    font-size: 3.2rem;
+  }
+  .search-form {
+    padding: 2rem 0;
+  }
+  .search-form .search-form-box {
+    width: 70%;
+    padding: 1rem 2rem;
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-form .search-form-box select, 
+  .search-form .search-form-box .input-group input {
+    width: 100%;
+  }
+  .search-form .search-form-box .search {
+    width: max-content;
+  }
+  .views .services-section {
+    display: block;
+  }
+  .services-section .cards {
+    display: none;
+  }
+  .views .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .views .cards .card:last-child {
+    border: 2px solid tan;
+    display: none;
+  }
+  .views .cards .card .card-info p {
+    font-size: 1.4rem;
+  }
+  .views .cards .card .neighbourhood {
+    font-size: 2.2rem;
+  }
+  .views .cards .card .purchase-group {
+    gap: 2rem;
+  }
+  .views .cards .card .purchase-group button {
+    font-size: 1rem;
+  }
+  .cards-flex .testimonial-author h3 {
+    font-size: 2rem;
+  }
+  footer {
+    display: block;
+    padding: 4rem 4rem 2rem;
+  }
+  footer .footer-info {
+    margin-bottom: 2rem;
+  }
+  footer .footer-info .footer-desc {
+    max-width: 65ch;
+  }
+  footer .footer-desc h3 {
+    margin-bottom: 1rem;
+    color: #2d0c5c;
+  }
+  footer .footer-desc h3 span {
+    color: #772877;
+  }
+  footer .footer-sitemap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-sitemap .sitemap {
+    margin-bottom:  2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+  .page-wrapper {
+    display: flex;
+    margin: 10rem 2rem 2rem;
+    padding: 5rem 2rem 4rem;
+    height: 45vh;
+  }
+  .page-wrapper .hero-text {
+    gap: 2.5rem;
+  }
+  .page-wrapper .hero-text .banner {
+    margin: 0 2rem;
+    font-size: 2.2rem;
+    line-height: 1;
+    z-index: 1;
+  }
+  .banner h3 {
+    font-size: 1.5rem;
+  }
+  .page-wrapper .hero-text .banner .welcome-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 35ch;
+    line-height: 1.2;
+  }
+  .hero-text .banner-btn {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+  .hero-text .banner-achievements {
+    margin-left: 2rem;
+  }
+  .search-form {
+    padding: 2rem 0;
+  }
+  .search-form .search-form-box {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-form .search-form-box select {
+    width: 100%;
+  }
+
+  .views {
+    padding: 0 2rem 6rem;
+  }
+  .views-dark {
+    padding: 4rem 2rem;
+  }
+  .views h3 {
+    font-size: 2rem;
+  }
+  .views .views-tab p {
+    justify-content: flex-end;
+    font-size: 1.3rem;
+  }
+  .views .views-tab img {
+    width: 30%;
+  }
+  .views .services-section {
+    display: block;
+  }
+  .services-section .services h3, .services-section .services p.services-info,
+  .services-section .services ul, .services-section .services button {
+    margin-left: 2rem;
+  }
+  .views .cards {
+    grid-template-columns: 100%;
+    margin-top: 3rem;
+  }
+  .views .cards-flex {
+    display: grid;
+  }
+
+  footer {
+    display: block;
+    padding: 4rem 2rem 2rem;
+  }
+  footer .footer-info {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+  footer .footer-desc h3 {
+    margin-bottom: 1rem;
+    color: #2d0c5c;
+  }
+  footer .footer-desc h3 span {
+    color: #772877;
+  }
+  footer .footer-sitemap {
+    display: block;
+  }
+  .footer-sitemap .sitemap {
+    margin-bottom:  2rem;
+  }
+}

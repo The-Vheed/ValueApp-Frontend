@@ -1,0 +1,565 @@
+/* 
+  This section houses the header and footer styles of the code base.
+  All changes made here would affect the entire website, so if possible,
+  ensure to have a backup. Happy Coding!
+*/
+
+/* Preset */
+:root {
+  --main-color: #2d0c5c;
+  --nav-link: #7320e9;
+  --button-color: #2d0c5c;
+  --button-shadow-color: #2d0c5c;
+  --button-shadow-focus-color: #54209e;
+  --button-focus-color: #54209e;
+  --button-border-radius: 20px;
+}
+
+/* Default */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html, body {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+ul, li, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1300px;
+  margin: 10rem auto 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+.toggler{
+  color: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: var(--main-color);
+  box-shadow: 1px 1px 5px #a9a9a9;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 70px;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .branding {
+  padding: 1rem 2rem;
+  padding-left: 0;
+}
+header .branding h3 {
+  color: #f8f4ff;
+  font-size: 2rem;
+}
+header .branding h3 span {
+  color: #d8bdff; /* different shade of violet*/
+}
+header > a {
+  display: none;
+}
+header .nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.nav-item{
+  position: relative;
+}
+header .nav-list .nav-item a {
+  color: #fff;
+  font-weight: 600;
+}
+
+header .login_signup a {
+  padding: 1rem 1.2rem;
+  border-radius: var(--button-border-radius);
+  color: var(--main-color);
+  font-weight: 600;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 5px var(--button-shadow-color);
+}
+header .login_signup a:hover{
+  background-color: #e9d9ff;
+}
+header .login_signup a:focus{
+  background-color: var(--button-focus-color);
+  box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
+}
+
+/* styling for the scroll to top button */
+
+.scroll_top{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3f0196;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 100%;
+  cursor: pointer;
+  transition: .8s linear;
+  color: white;
+}
+.scroll_top_show{
+  bottom: 20px;
+}
+.scroll_top_icon{
+  animation: scroll_ani .6s infinite linear;
+}
+@keyframes scroll_ani {
+  0%{
+    transform: translateY(3px);
+  }
+  50%{
+    transform: translateY(-3px);
+  }
+  100%{
+    transform: translateY(3px);
+  }
+}
+
+
+/* styles for the scroll bar */
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: gray;
+    border-radius: 3px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #3f0196;
+    border-radius: 3px;
+}
+
+
+
+/* style for the text lines */
+.va_line_cont {
+  display: flex;
+  align-items: center;
+}
+.va_line {
+  width: 30px;
+  height: 2px;
+  background: purple;
+  margin-right: 60px;
+  position: relative;
+}
+.va_line::after {
+  content: '';
+  height: 2px;
+  width: 25px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 5px);
+}
+.va_line::before {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 25px + 10px);
+}
+
+
+/* style for the nav lines */
+.nav_line{
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -5px;
+  left: 0;
+  transition: .6s;
+}
+.nav_line_expand{
+  width: 100%;
+}
+.nav-item:hover .nav_line{
+  width: 100%;
+}
+
+
+
+/* Footer Section */
+footer {
+  padding: 4rem;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40%;
+  gap: 2rem;
+}
+footer .footer-info .footer-desc {
+  font-size: 1.5rem;
+  max-width: 45ch;
+}
+footer .footer-info .footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-info .footer-socials a {
+  font-size: 3rem;
+  color: #2d0c5c;
+}
+footer .footer-sitemap {
+  flex: 0 0 55%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+footer .footer-sitemap .sitemap h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+footer .footer-sitemap ul li {
+  font-size: 1.5rem;
+  color: #2d0c5c;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+footer .footer-sitemap ul a {
+  color: #2d0c5c;
+}
+.rights {
+  padding: 1rem;
+  text-align: center;
+  background-color: #2d0c5c;
+}
+.rights p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.prop_text{
+  display: flex;
+  align-items: center;
+}
+.prop_line{
+  width: 30px;
+  height: 2px;
+  background: purple;
+  margin-right: 60px;
+  position: relative;
+}
+.prop_line::after{
+  content: '';
+  height: 2px;
+  width: 25px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 5px);
+}
+.prop_line::before{
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: indigo;
+  position: absolute;
+  left: calc(100% + 25px + 10px);
+}
+.prop_tx_title{
+  font-size: 17px;
+  font-weight: 600;
+}
+.spacing_container{
+padding: 18px 4% 0px 4%;
+}
+
+.bg_mode_cont{
+  background: indigo;
+  position: fixed;
+  top: 14%;
+  border-radius: 20px 0 0 20px;
+  right: 0;
+  padding: 8px;
+}
+.bg_mode{
+  font-size: 34px;
+}
+.view_img_cont{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10000;
+}
+._view_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view_image{
+  width: 90%;
+}
+.x {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.input_group{
+  position: relative;
+}
+.va_input:focus + .placeholder{
+  top: 0px;
+  color: gray;
+}
+.placeholder{
+  position: absolute;
+  left: 6px;
+  top: 47%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  transition: .3s;
+  pointer-events: none;
+  padding: 4px 8px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  color: gray;
+}
+
+.h_img_cont{
+  overflow: hidden;
+  width: 100%;
+}
+.h_img{
+  transition: .4s;
+}
+.h_img:hover{
+  transform: scale(1.1);
+}
+
+.o-btn {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: var(--button-border-radius);
+  box-shadow: 0px 0px 5px var(--button-shadow-color);
+}
+.o-btn:hover {
+  background-color: var(--button-focus-color);
+}
+.o-btn:focus {
+  background-color: var(--button-focus-color);
+  box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
+}
+.ripple_ani {
+  width: 500px;
+  height: 500px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  header .branding {
+    padding: 0;
+  }
+  .toggler {
+    z-index: -1000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+  header .nav-list {
+    position: fixed;
+    z-index: -2000;
+    inset: 0 0 0 45%;
+    list-style: none;
+    padding: min(20rem, 15vh) 3rem;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    gap: 3rem;
+    margin: 0;
+    flex-direction: column;
+    background: var(--main-color);
+    transform: translateX(100%);
+    transition: transform 200ms ease-in-out;
+  }
+  header .nav-list[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+
+  /* navline */
+  .nav_line_expand{
+    width: 30%;
+  }
+  .nav-item:hover .nav_line{
+    width: 30%;
+  }
+
+
+
+  footer {
+    display: block;
+    padding: 4rem 4rem 2rem;
+  }
+  footer .footer-info {
+    margin-bottom: 2rem;
+  }
+  footer .footer-info .footer-desc {
+    max-width: 65ch;
+  }
+  footer .footer-desc h3 {
+    margin-bottom: 1rem;
+    color: #2d0c5c;
+  }
+  footer .footer-desc h3 span {
+    color: #772877;
+  }
+  footer .footer-sitemap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-sitemap .sitemap {
+    margin-bottom:  2rem;
+  }
+}
+
+@media (max-width: 810px) {
+    /* navline */
+  .nav_line_expand{
+      width: 40%;
+    }
+    .nav-item:hover .nav_line{
+      width: 40%;
+    }
+  }
+@media (max-width: 700px) {
+    /* navline */
+  .nav_line_expand{
+      width: 50%;
+    }
+    .nav-item:hover .nav_line{
+      width: 50%;
+    }
+  }
+@media (max-width: 500px) {
+    /* navline */
+  .nav_line_expand{
+      width: 66%;
+    }
+    .nav-item:hover .nav_line{
+      width: 66%;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header > a {
+    font-size: 2.5rem;
+    color: #2d0c5c;
+    display: flex;
+    align-items: center;
+  }
+  .toggler {
+    z-index: -1000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+  header .nav-list {
+    position: fixed;
+    z-index: -2000;
+    inset: 0 0 0 45%;
+    font-size: 1.8rem;
+    list-style: none;
+    padding: min(20rem, 15vh) 3rem;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin: 0;
+    flex-direction: column;
+    background: var(--main-color);
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+  header .nav-list[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  footer {
+    display: block;
+    padding: 4rem 2rem 2rem;
+  }
+  footer .footer-info {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+  footer .footer-desc h3 {
+    margin-bottom: 1rem;
+    color: #2d0c5c;
+  }
+  footer .footer-desc h3 span {
+    color: #772877;
+  }
+  footer .footer-sitemap {
+    display: block;
+  }
+  .footer-sitemap .sitemap {
+    margin-bottom:  2rem;
+  }
+}
