@@ -49,7 +49,7 @@ function updateProgressBar() {
 formStep.classList.add("hide");
 
 btnActive.addEventListener("click", () => {
-  formStep.classList.toggle("hide");
+  formStep.classList.remove("hide");
   document.getElementById("postal-code").classList.remove("hide");
 
   for (var property of propertyHide) {
@@ -58,7 +58,10 @@ btnActive.addEventListener("click", () => {
 });
 
 btnFullActive.addEventListener("click", () => {
-  formStep.classList.toggle("hide");
+  if (formStep.classList.contains("hide")) {
+    formStep.classList.remove("hide");
+  }
+
   document.getElementById("postal-code").classList.add("hide");
       
   for (var property of propertyHide) {
