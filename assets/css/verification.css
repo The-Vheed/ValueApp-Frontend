@@ -28,23 +28,24 @@ main{
     align-items: center;
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
-    border-radius: 7px;
+    border-radius: 5px;
 }
 .Econt{
     display: flex;
     flex-flow: column;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 .Elabel{
     font-size: 14px;
 }
 .Einput{
-    height: 30px;
+    height: 32px;
     padding: 0px 10px;
-    border: 2px solid indigo;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
     outline: none;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 3px;
     width: 270px;
     /* width: 50%; */
 }
@@ -89,20 +90,21 @@ main{
     align-items: center;
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
-    border-radius: 7px;
+    border-radius: 5px;
 }
 .Ucont{
     display: flex;
     flex-flow: column;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 .Ulabel{
     font-size: 14px;
 }
 .Uinput{
-    height: 30px;
+    height: 32px;
     padding: 0px 10px;
-    border: 2px solid indigo;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
     outline: none;
     font-size: 15px;
     border-radius: 5px;
@@ -137,20 +139,21 @@ main{
     align-items: center;
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
-    border-radius: 7px;
+    border-radius: 5px;
 }
 .Pcont{
     display: flex;
     flex-flow: column;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 .Plabel{
     font-size: 14px;
 }
 .Pinput{
-    height: 30px;
+    height: 32px;
     padding: 0px 10px;
-    border: 2px solid indigo;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
     outline: none;
     font-size: 15px;
     border-radius: 5px;
