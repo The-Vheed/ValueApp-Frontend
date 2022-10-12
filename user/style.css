@@ -95,7 +95,7 @@ textarea.input-control {
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   white-space: nowrap;
   color: white;
 }
