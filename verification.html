@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Box Icons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom Styling -->
+  <!-- <link rel="stylesheet" href="assets/boxicons/css/boxicons.css"> -->
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/verification.css">
+  <link rel="stylesheet" href="assets/css/main_responsive.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
+
+  <title>Valueapp || Home</title>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <!-- <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div> -->
+  
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="branding">
+        <h3>Value<span>App</span></h3>
+      </div>
+      <ul id="nav-list" data-visible="false" class="nav-list">
+        <li class="nav-item"><div class="nav_line"></div><a href="index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="valuation/create.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="val.html">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="./about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
+      </ul>
+      <div class="login_signup">
+        <a href="./auth.html">Login / Sign Up</a>
+      </div>
+      <a href="#" class="toggler" aria-controls="nav-list"><i class="bx bx-menu-alt-right"></i></a>
+    </header>
+
+    <main>
+        <div class="verification_btns">
+          <button class="email_ver_btn email_ver">Email verification</button>
+          <button class="email_ver_btn update_ver">Update Details</button>
+          <button class="email_ver_btn phone_ver">Phone verification</button>
+          <button class="email_ver_btn phoneT_ver">Phone verification Token</button>
+        </div>
+
+        <!-- EMAIL VERIFICATION -->
+
+        <div class="email_ver_cont">
+          <form action="" class="email_verification_form">
+            <div class="Econt fname_input_cont">
+              <label for="" class="Elabel fname_label">First Name</label>
+              <input type="text" name="" id="" class="Einput fname">
+            </div>
+            <div class="Econt lname_input_cont">
+              <label for="" class="Elabel lname_label">Last Name</label>
+              <input type="text" name="" id="" class="Einput lname">
+            </div>
+            <div class="Econt uname_input_cont">
+              <label for="" class="Elabel uname_label">Username</label>
+              <input type="text" name="" id="" class="Einput uname">
+            </div>
+            <div class="Econt e_address_input_cont">
+              <label for="" class="Elabel e_address_label">Email Adress</label>
+              <input type="email" name="" id="" class="Einput e_address">
+            </div>
+            <div class="Econt pass_input_cont">
+              <label for="" class="Elabel pass_label">Password</label>
+              <input type="password" name="" id="" class="Einput pass">
+            </div>
+            <div class="Econt cpass_input_cont">
+              <label for="" class="Elabel cpass_label">Confirm Password</label>
+              <input type="password" name="" id="" class="Einput cpass">
+            </div>
+            <button class="email_ver_btn">Submit</button>
+            <div class="Elogin">
+              <span class="Elogin_txt">Already Signed Up</span>
+              <span class="Elogin_link"><a href="">Login</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <!-- UPDATE DETAILS -->
+        
+        <div class="update_det_cont">
+          <form action="" class="update_details_form">
+            <div class="Ucont u_uname_input_cont">
+              <label for="" class="Ulabel u_uname_label">Username</label>
+              <input type="text" name="" id="" class="Uinput u_uname">
+            </div>
+            <div class="Ucont u_fname_input_cont">
+              <label for="" class="Ulabel u_fname_label">First Name</label>
+              <input type="text" name="" id="" class="Uinput u_fname">
+            </div>
+            <div class="Ucont u_lname_input_cont">
+              <label for="" class="Ulabel u_lname_label">Last Name</label>
+              <input type="text" name="" id="" class="Uinput u_lname">
+            </div>
+            <button class="u_details_btn">Update</button>
+          </form>
+        </div>
+
+        <!-- PHONE VERIFICATION -->
+
+        <div class="phone_ver_cont">
+          <form action="" class="phone_verification_form">
+            <div class="Pcont">
+              <label for="" class="Plabel">Phone Number</label>
+              <input type="text" name="" id="" class="Pinput p_number">
+            </div>
+            <div class="Pcont">
+              <label for="" class="Plabel">Method</label>
+              <select name="" id="" class="Pinput p_method">
+                <option value="sms">sms</option>
+                <option value="phone">phone</option>
+              </select>
+            </div>
+            <button class="phone_ver_btn">Request Verification</button>
+          </form>
+        </div>
+
+        <!-- PHONE TOKEN -->
+
+        <div class="phone_ver_cont phone_ver_cont2">
+          <form action="" class="phone_verification_form">
+            <div class="Pcont">
+              <label for="" class="Plabel">Verification Token</label>
+              <input type="text" name="" id="" class="Pinput p_number">
+            </div>
+            <button class="phone_ver_btn">verify Phone</button>
+          </form>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-desc">
+          <h3>Value<span>App</span></h3>
+          <p>
+            Open source is a source code that is made freely available for 
+            possible modification and redistribution. These products may include
+            permissions to use the source code, design documents, or contents of
+            the product.
+          </p>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><i class="bx bxl-discord-alt bx-tada"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-twitter bx-tada"></i></a>
+        </div>
+      </div>
+      <div class="footer-sitemap">
+        <div class="sitemap">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="#">Explore Houses</a></li>
+            <li><a href="#">Sell Property</a></li>
+            <li><a href="#">Playoffs</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>Innovate</h3>
+          <ul>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Creative Markets</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Sellers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="rights">
+      <p> &copy; All rights reserved</p>
+    </div>
+    <div class="scroll_top">
+      <i class="scroll_top_icon fa-solid fa-angle-up"></i>
+    </div>
+  </div>
+
+  <script src="assets/js/jQuery.js"></script>
+  <script src="assets/js/scrollReveal.js"></script>
+  <script src="assets/js/verification.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/loader.js"></script>
+</body>
+</html>
