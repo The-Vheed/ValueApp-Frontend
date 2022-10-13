@@ -95,7 +95,7 @@ textarea.input-control {
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   white-space: nowrap;
   color: white;
 }
@@ -447,7 +447,7 @@ form input, form textarea, form select {
   padding: 1rem;
   background-color: #f5f5f5;
   border: 1px solid #f5f5f5;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
   font-size: 1.4rem;
 }
@@ -500,7 +500,7 @@ form .table-actions .table-buttons {
   margin-left: .3rem;
 }
 .form-step-active a.btn {
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1.4rem;
   padding: 1rem 3rem;
   background-color: #2d0c5cde;

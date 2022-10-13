@@ -1,0 +1,181 @@
+main{
+    padding: 20px 0;
+}
+
+/* EMAIL VERIFICATION */
+
+.verification_btns{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.verification_btns button{
+    margin: 10px;
+}
+.email_ver_cont{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    display: none;
+}
+.email_verification_form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+}
+.Econt{
+    display: flex;
+    flex-flow: column;
+    margin: 8px 0;
+}
+.Elabel{
+    font-size: 14px;
+}
+.Einput{
+    height: 32px;
+    padding: 0px 10px;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
+    outline: none;
+    font-size: 15px;
+    border-radius: 3px;
+    width: 270px;
+    /* width: 50%; */
+}
+.email_ver_btn{
+    padding: 10px 24px;
+    align-self: flex-start;
+    background: indigo;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+.Elogin{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 100%;
+    margin-top: 10px;
+}
+.Elogin_link a{
+    text-decoration: underline;
+}
+
+
+/* UPDATE DETAILS */
+
+
+.update_det_cont{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    display: none;
+}
+.update_details_form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+}
+.Ucont{
+    display: flex;
+    flex-flow: column;
+    margin: 8px 0;
+}
+.Ulabel{
+    font-size: 14px;
+}
+.Uinput{
+    height: 32px;
+    padding: 0px 10px;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 270px;
+    /* width: 50%; */
+}
+.u_details_btn{
+    padding: 10px 24px;
+    align-self: flex-start;
+    background: indigo;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+
+/* PHONE VERIFICATION */
+
+.phone_ver_cont{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    display: none;
+}
+.phone_verification_form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+}
+.Pcont{
+    display: flex;
+    flex-flow: column;
+    margin: 8px 0;
+}
+.Plabel{
+    font-size: 14px;
+}
+.Pinput{
+    height: 32px;
+    padding: 0px 10px;
+    border: 2px solid #d1d1d1;
+    background: #d1d1d1;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 270px;
+    /* width: 50%; */
+}
+.phone_ver_btn{
+    padding:8px 18px;
+    align-self: flex-start;
+    background: indigo;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+
+@media (max-width: 360px) {
+    .email_verification_form{
+        width: 90%;
+    }
+    .Einput{
+        width: 100%;
+    }
+}
