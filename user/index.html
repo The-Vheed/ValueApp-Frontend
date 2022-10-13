@@ -16,7 +16,7 @@
 
   <title>ValueApp || View Valuation Requests</title>
 </head>
-<body>
+<body onload="displayMsg()">
 
   <div class="nav-overlay"></div>
   <header>
@@ -66,14 +66,20 @@
     <div class="page-content">
       <div class="admin-container">
         <div class="admin-table lg-box">
-          <h2 class="center">Welcome, Emmanuel</h2>
-          <hr>
-
-          <div class="msg success">
+          <div class="msg success" id="msg1">
             <i class="bx bxs-check-circle msg-icon"></i>
             <span>Profile details updated</span>
           </div>
-
+          <div class="msg warning" id="msg2">
+            <i class="bx bxs-error-circle msg-icon"></i>
+            <span>Some fields are empty</span>
+          </div>
+          <div class="msg error" id="msg3">
+            <i class="bx bx-x-circle msg-icon"></i>
+            <span>Profile update unsuccessful</span>
+          </div>
+          <h2 class="center">Welcome, Emmanuel</h2>
+          <hr>
 
           <div class="responsive-table">
             <div class="profile-card">
@@ -83,7 +89,7 @@
               <div class="profile__main-info">
                 <div class="table-actions">
                   <div class="table-buttons">
-                    <a href="create.html" class="btn primary-btn small-btn">
+                    <a href="edit.html" class="btn primary-btn small-btn">
                       <i class="bx bx-plus-circle icon"></i> Edit Profile
                     </a>
                   </div>
@@ -129,11 +135,6 @@
         <div class="admin-table lg-box">
           <h2 class="center">Asset Valuation Requests</h2>
           <hr>
-
-          <div class="msg success">
-            <i class="bx bxs-check-circle msg-icon"></i>
-            <span>Valuation request successful</span>
-          </div>
 
           <div class="table-actions">
             <div class="table-filter-group">
@@ -208,6 +209,23 @@
   </div>
 
   <script src="sidebar.js"></script>
+  <script type="text/javascript">
+    var Message1 = document.getElementById('msg1');
+    var Message2 = document.getElementById('msg2');
+    var Message3 = document.getElementById('msg3');
+
+    function displayMsg() {
+      Message1;
+      Message2;
+      Message3;
+
+      setTimeout(() => {
+        document.getElementById('msg1').classList.add("hide");
+        document.getElementById('msg2').classList.add("hide");
+        document.getElementById('msg3').classList.add("hide");
+      }, 4000);
+    }
+  </script>
 
 </body>
 </html>
