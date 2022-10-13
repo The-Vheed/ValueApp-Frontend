@@ -82,7 +82,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .views .cards .card:last-child {
-    border: 2px solid tan;
     display: none;
   }
   .views .cards .card .card-info p {
@@ -126,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   header {
     padding: 1rem 2rem;
   }
@@ -209,8 +208,14 @@
     grid-template-columns: 100%;
     margin-top: 3rem;
   }
+  .views .cards .card:last-child {
+    display: unset;
+  }
   .views .cards-flex {
     display: grid;
+  }
+  .property_display {
+    grid-template-columns: 100%;
   }
 
   footer {

@@ -5,7 +5,7 @@ const close = document.querySelector(".bx-menu-alt-right");
 const sr = ScrollReveal ({
   distance: '25px',
   duration: 1000,
-  reset: true
+  reset: false
 });
 
 sr.reveal ('.page-wrapper, .views, .animate, footer',{
