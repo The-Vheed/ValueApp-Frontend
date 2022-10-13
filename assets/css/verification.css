@@ -172,10 +172,13 @@ main{
 }
 
 @media (max-width: 360px) {
-    .email_verification_form{
+    .email_verification_form , .update_details_form , .phone_verification_form{
         width: 90%;
     }
-    .Einput{
+    .Econt, .Ucont, .Pcont{
+        width: 100%;
+    }
+    .Einput, .Uinput, .Pinput{
         width: 100%;
     }
 }

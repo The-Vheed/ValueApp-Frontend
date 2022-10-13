@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -116,10 +118,10 @@
         <!-- PHONE VERIFICATION -->
 
         <div class="phone_ver_cont">
-          <form action="" class="phone_verification_form">
+          <form  id="login" onsubmit="process(event)" action="" class="phone_verification_form">
             <div class="Pcont">
-              <label for="" class="Plabel">Phone Number</label>
-              <input type="text" name="" id="" class="Pinput p_number">
+                  <p class="Plabel">Enter your phone number:</p>
+                  <input class="Pinput" id="phone" type="tel" name="phone" />
             </div>
             <div class="Pcont">
               <label for="" class="Plabel">Method</label>
@@ -207,5 +209,13 @@
   <script src="assets/js/home.js"></script>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/loader.js"></script>
+   <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    preferredCountries: ["ng"],
+   });
+  </script>
 </body>
 </html>
