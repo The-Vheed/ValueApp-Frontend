@@ -12,7 +12,7 @@
   --button-shadow-color: #2d0c5c;
   --button-shadow-focus-color: #54209e;
   --button-focus-color: #54209e;
-  --button-border-radius: 10px;
+  --button-border-radius: 20px;
 }
 
 /* Default */
@@ -127,18 +127,19 @@ header .login_signup a {
   background-color: #fff;
   border: none;
   box-shadow: 0px 0px 5px var(--button-shadow-color);
+  transition: all .3s ease-in-out;
 }
-header .login_signup a:hover{
+header .login_signup a:hover {
   background-color: #e9d9ff;
+  transition: all .3s ease-in-out;
 }
-header .login_signup a:focus{
+header .login_signup a:focus {
   background-color: var(--button-focus-color);
   box-shadow: 0px 0px 20px var(--button-shadow-focus-color);
 }
 
 /* styling for the scroll to top button */
-
-.scroll_top{
+.scroll_top {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -172,20 +173,16 @@ header .login_signup a:focus{
   }
 }
 
-
 /* styles for the scroll bar */
-
-body::-webkit-scrollbar{
-    width: 10px;
-    background: gray;
-    border-radius: 3px;
+body::-webkit-scrollbar {
+  width: 10px;
+  background: gray;
+  border-radius: 3px;
 }
-body::-webkit-scrollbar-thumb{
-    background: #3f0196;
-    border-radius: 3px;
+body::-webkit-scrollbar-thumb {
+  background: #3f0196;
+  border-radius: 3px;
 }
-
-
 
 /* style for the text lines */
 .va_line_cont {
@@ -216,7 +213,6 @@ body::-webkit-scrollbar-thumb{
   left: calc(100% + 25px + 10px);
 }
 
-
 /* style for the nav lines */
 .nav_line{
   position: absolute;
@@ -233,8 +229,6 @@ body::-webkit-scrollbar-thumb{
 .nav-item:hover .nav_line{
   width: 100%;
 }
-
-
 
 /* Footer Section */
 footer {
@@ -440,6 +434,7 @@ padding: 18px 4% 0px 4%;
     width: 1.5rem;
     aspect-ratio: 1;
     border: 0;
+    justify-content: center;
   }
   header .nav-list {
     position: fixed;
@@ -474,8 +469,6 @@ padding: 18px 4% 0px 4%;
   .nav-item:hover .nav_line{
     width: 30%;
   }
-
-
 
   footer {
     display: block;
@@ -540,15 +533,6 @@ padding: 18px 4% 0px 4%;
     color: #2d0c5c;
     display: flex;
     align-items: center;
-  }
-  .toggler {
-    z-index: -1000;
-    right: 1rem;
-    top: 2rem;
-    background: transparent;
-    width: 1.5rem;
-    aspect-ratio: 1;
-    border: 0;
   }
   header .nav-list {
     position: fixed;

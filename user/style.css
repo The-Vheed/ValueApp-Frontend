@@ -88,16 +88,17 @@ textarea.input-control {
   background-position: center;
 }
 .btn {
+  border: 1px;
   background-color: #b1b1b1;
   font-family: "Work Sans", sans-serif;
-  border: 1px solid transparent;
   padding: .65rem 1.5rem;
   text-align: center;
   text-decoration: none !important;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 4px;
   white-space: nowrap;
   color: white;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #a0a0a0;
@@ -582,6 +583,59 @@ form .table-actions .table-buttons {
   border-radius: 50%;
 }
 
+/* Funding section */
+.fund-control {
+  font-size: 1.4rem;
+  position: relative;
+  margin: 1rem 0;
+  border-bottom: 2px solid #2d0c5c;
+}
+.fund-control input {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  width: 100%;
+  padding: 0 1rem;
+  height: 3rem;
+  color: #2d0c5c;
+  border: none;
+  outline: none;
+  background: none;
+}
+.fund-control label {
+  position: absolute;
+  top: 40%;
+  left: .5rem;
+  color: #a9a9a9;
+  font-weight: 600;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  pointer-events: none;
+  transition: .5s;
+}
+.fund-control .divider::before {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 0%;
+  height: .5rem;
+  transition: .5s;
+}
+.fund-control input:focus ~ label, 
+.fund-control input:valid ~ label {
+  top: -.2rem;
+  font-size: 1.2rem;
+}
+.fund-control input:focus ~ .divider::before, 
+.fund-control input:valid ~ .divider::before {
+  width: 100%;
+}
+.responsive-table .pc-block {
+  justify-content: unset;
+  margin: 1.5rem auto;
+  width: max-content;
+}
+
 /* Button */
 .btns-group {
   margin-top: 1rem;
@@ -764,6 +818,9 @@ form .table-actions .table-buttons {
   }
   .profile-card .profile__main-img {
     margin: 0 auto;
+  }
+  .responsive-table .pc-block button {
+    width: 100%;
   }
 }
 

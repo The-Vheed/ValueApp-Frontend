@@ -7,16 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- CDN Stylesheet -->
+  <!-- CDN Styling -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
   <!-- Styling -->
-  <!-- <link rel="stylesheet" type="text/css" href="../assets/boxicons/css/boxicons.css">
-  <link rel="stylesheet" href="../assets/quill/quill.snow.css"> -->
+  <link rel="stylesheet" type="text/css" href="../assets/boxicons/css/boxicons.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>ValueApp || Edit Profile</title>
+  <title>ValueApp || Fund Account</title>
 </head>
 <body>
 
@@ -67,57 +65,27 @@
 
     <div class="page-content">
       <div class="admin-container">
-        
-        <form action="#" method="post" class="admin-form md-box" enctype="multipart/form-data">
-          <h1 class="center form-title">Edit Profile Details</h1>
-          <!-- <ul class="form-errors">
-            <li>Username required</li>
-            <li>Email required</li>
-          </ul> -->
+        <div class="admin-table lg-box">
+          <h2 class="center">Welcome, Emmanuel</h2>
+          <hr>
 
-          <div class="form-step form-step-active" id="form-step">
-            <div class="input-group-flex">
-              <div class="input-group">
-                <label for="dob">First Name</label>
-                <input type="text" name="" id="">
+          <div class="responsive-table">
+            <div class="profile-card pc-block">
+              <div class="fund-control">
+                <input type="number" name="" id="" required>
+                <span class="divider"></span>
+                <label for=""><i class="bx bx-money-withdraw"></i> Enter amount</label>
               </div>
-              <div class="input-group">
-                <label for="dob">Last Name</label>
-                <input type="text" name="" id="">
-              </div>
-            </div>
-            <div class="input-group">
-              <label for="">Email Address</label>
-              <input type="email">
-            </div>
-            <div class="input-group-flex">
-              <div class="input-group">
-                <label for="dob">Username</label>
-                <input type="text" name="" id="">
-              </div>
-              <div class="input-group">
-                <label for="dob">Phone Number</label>
-                <input type="number" name="" id="">
-              </div>
-            </div>
-            <div class="input-group">
-              <label for="">Please enter your password to continue</label>
-              <input type="password" name="" id="">
-            </div>
-            <div class="btns-group">
-              <input type="submit" name="register-btn" value="Update" class="btn">
+              <button class="btn big-btn success-btn" type=""><i class="bx bxs-wallet"></i> Fund Account</button>
             </div>
           </div>
-        </form>
 
+        </div>
       </div>
     </div>
   </div>
 
   <script src="sidebar.js"></script>
-  <!-- <script src="../assets/quill/quill.js"></script> -->
-  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-  <!-- <script src="../assets/js/form.js"></script> -->
 
 </body>
 </html>

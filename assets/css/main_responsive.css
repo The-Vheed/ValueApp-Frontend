@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 880px) {
   .page-wrapper {
-    height: 55vh;
+    height: 45vh;
   }
   .search-form {
     padding: 2rem 0;
