@@ -115,7 +115,8 @@ p.status {
 }
 .accordion .accordion-container.active .content {
   height: max-content;
-  max-height: 500px;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 .accordion .accordion-container.active .label::before {
   content: "-";
