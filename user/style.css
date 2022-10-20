@@ -528,7 +528,7 @@ form .table-actions .table-buttons {
   margin-right: .5rem;
 }
 .admin-form .text-editor {
-  min-height: 100px;
+  min-height: 130px;
   border: none;
 }
 .ql-snow .ql-picker.ql-header .ql-picker-label::before, 
@@ -545,7 +545,7 @@ form .table-actions .table-buttons {
   padding-left: 1rem;
 }
 .admin-form .text-editor p {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .admin-form .text-editor .ql-editor {
   min-height: inherit;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Box Icons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="../../assets/boxicons/css/boxicons.css">
+  <link rel="stylesheet" href="../../assets/quill/quill.snow.css">
+  <link rel="stylesheet" href="../../assets/css/header.css">
+  <link rel="stylesheet" href="../../user/style.css">
+  <link rel="stylesheet" href="../../valuation/styleOverride.css">
+
+  <title>ValueApp || Valuation Report</title>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="branding">
+        <h3>Value<span>App</span></h3>
+      </div>
+      <ul id="nav-list" data-visible="false" class="nav-list">
+        <li class="nav-item"><div class="nav_line"></div><a href="../../index.html">Home</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="../../valuation.html">Asset Valuation</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="../../p_listing.html">Property Listing</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="../../val.html">Services</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="../../about.html">About Us</a></li>
+        <li class="nav-item"><div class="nav_line"></div><a href="#">Contact</a></li>
+      </ul>
+      <!-- <div class="login_signup">
+        <a href="./auth.html">Login / Sign Up</a>
+      </div> -->
+      <div class="profile">
+        <img src="../../assets/images/6.jpg" alt="">
+        <div class="profile-details">
+          <p><a href="../../user/index.html">Charles Emmanuel</a></p>
+          <small>#4,500,000</small>
+        </div>
+      </div>
+      <a href="#" class="toggler" aria-controls="nav-list"><i class="bx bx-menu-alt-right"></i></a>
+    </header>
+
+    <!-- Property Valuation Form -->
+    <div class="form-container animate">
+      <form action="#" method="post" class="admin-form md-box" enctype="multipart/form-data">
+        <h1 class="center form-title">Valuation Return Form</h1>
+
+        <div class="form-step form-step-active" id="form-step">
+          
+          <div class="input-group">
+            <label for="post-editpr">Valaution Return Message</label>
+            <div id="text-editor" class="text-editor"></div>
+          </div>
+          <div class="btns-group">
+            <input type="submit" name="register-btn" value="Submit" class="btn">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="../../assets/js/jQuery.js"></script>
+  <script src="../../assets/js/scrollReveal.js"></script>
+  <script src="../../assets/quill/quill.js"></script>
+  <script src="../../assets/js/form.js"></script>
+  <script src="../../assets/js/nav.js"></script>
+  <script src="https://kit.fontawesome.com/22922bdbe9.js" crossorigin="anonymous"></script>
+</body>
+</html>
