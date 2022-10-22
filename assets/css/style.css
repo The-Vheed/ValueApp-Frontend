@@ -290,7 +290,7 @@ textarea.input-control {
 /* ------ Tables ------ */
 .admin-table .table-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
   font-size: 1.2rem;
